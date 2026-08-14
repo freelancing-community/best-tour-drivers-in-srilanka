@@ -77,12 +77,12 @@ const Home2Team = () => {
                         <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                         <div className="teams-img">
                           <img
-                            src="/assets/img/home2/teams-card-img1.png"
+                            src="/assets/img/home2/about-tourguid1.png"
                             alt=""
                           />
                         </div>
                         <div className="teams-content">
-                          <h4>Landry Palmer</h4>
+                          <h4>Thilina Sampath</h4>
                           <span>Tour Guide</span>
                         </div>
                         <ul className="social-list">
@@ -123,12 +123,12 @@ const Home2Team = () => {
                         <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                         <div className="teams-img">
                           <img
-                            src="/assets/img/home2/teams-card-img2.png"
+                            src="/assets/img/home2/about-tourguide3.png"
                             alt=""
                           />
                         </div>
                         <div className="teams-content">
-                          <h4>Jackson Mason</h4>
+                          <h4>Thilina Sampath</h4>
                           <span>Tour Guide</span>
                         </div>
                         <ul className="social-list">
@@ -169,12 +169,12 @@ const Home2Team = () => {
                         <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                         <div className="teams-img">
                           <img
-                            src="/assets/img/home2/teams-card-img3.png"
+                            src="/assets/img/home2/about-tourguide3.png"
                             alt=""
                           />
                         </div>
                         <div className="teams-content">
-                          <h4>Joseph David</h4>
+                          <h4>Thilina Sampath</h4>
                           <span>Tour Guide</span>
                         </div>
                         <ul className="social-list">
@@ -215,12 +215,12 @@ const Home2Team = () => {
                         <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                         <div className="teams-img">
                           <img
-                            src="/assets/img/home2/teams-card-img4.png"
+                            src="/assets/img/home2/about-tourguid1.png"
                             alt=""
                           />
                         </div>
                         <div className="teams-content">
-                          <h4>Josiah Caleb</h4>
+                          <h4>Thilina Sampath</h4>
                           <span>Tour Guide</span>
                         </div>
                         <ul className="social-list">
