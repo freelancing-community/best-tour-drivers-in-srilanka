@@ -24,9 +24,9 @@ const page = () => {
       <Breadcrumb pagename="About Us" pagetitle="About Us" />
       <Home2About />
       <Home2WhyChoose />
-      <Home2Activities />
+      {/* <Home2Activities /> */}
       <Home2Team />
-      <Home2Blog />
+      {/* <Home2Blog /> */}
       <Newslatter />
       <Footer />
     </>
