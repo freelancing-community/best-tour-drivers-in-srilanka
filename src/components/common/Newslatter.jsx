@@ -7,13 +7,20 @@ const Newslatter = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="banner3-content">
+              <div
+                className="banner3-content"
+                style={{ backgroundImage: "none", backgroundColor: "#fff" }}
+              >
                 <h2>Join The Newsletter</h2>
                 <p>To receive our best monthly deals</p>
                 <form>
-                  <div className="from-inner">
-                    <input type="email" placeholder="Enter Your Gmail..." />
-                    <button type="submit" className="from-arrow">
+                  <div className="from-inner" style={{ borderColor: "#F6A824" }}>
+                    <input type="email" placeholder="Enter Your Gmail....." />
+                    <button
+                      type="submit"
+                      className="from-arrow"
+                      style={{ backgroundColor: "#F6A824" }}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={18}

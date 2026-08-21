@@ -11,17 +11,22 @@ const Footer = ({style}) => {
               <div className="footer-widget">
                 <div className="footer-logo">
                   <Link href="/">
-                    <img src="/assets/img/logo2.svg" alt="" />
+                    <img
+                      src="/images/logo.png"
+                      alt="Best Tour Drivers in Sri Lanka"
+                      style={{ height: "88px", width: "auto" }}
+                    />
                   </Link>
                 </div>
                 <h3>
-                  Want
-                  <span>
-                    to Take <br />
-                  </span>
-                  Tour Packages<span>?</span>
+                  Want to Take <br />
+                  Tour Packages?
                 </h3>
-                <Link href="/package" className="primary-btn1">
+                <Link
+                  href="/package"
+                  className="primary-btn2"
+                  style={{ padding: "15px 30px", fontSize: "16px", fontWeight: 600 }}
+                >
                   Book A Tour
                 </Link>
               </div>
@@ -47,6 +52,9 @@ const Footer = ({style}) => {
                   <li>
                     <Link href="/blog-grid">Article</Link>
                   </li>
+                  <li>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -66,7 +74,7 @@ const Footer = ({style}) => {
                     </svg>
                     <h5>More Inquiry</h5>
                   </div>
-                  <a href="tel:999858624984">+999-858 624 984</a>
+                  <a href="tel:+94743801833">+94 74 380 1833</a>
                 </div>
                 <div className="single-contact mb-35">
                   <div className="widget-title">
@@ -82,7 +90,12 @@ const Footer = ({style}) => {
                     </svg>
                     <h5>Send Mail</h5>
                   </div>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a
+                    href="mailto:besttourdriversinsrilanka@gmail.com"
+                    style={{ textDecoration: "underline", wordBreak: "break-word" }}
+                  >
+                    besttourdriversinsrilanka@gmail.com
+                  </a>
                 </div>
                 <div className="single-contact">
                   <div className="widget-title">
@@ -98,9 +111,8 @@ const Footer = ({style}) => {
                     </svg>
                     <h5>Address</h5>
                   </div>
-                  <a href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                    House 168/170, Avenue 01, Mirpur <br /> DOHS, Dhaka
-                    Bangladesh
+                  <a href="https://www.google.com/maps">
+                    No.555,1,A, test, test
                   </a>
                 </div>
               </div>
@@ -111,45 +123,8 @@ const Footer = ({style}) => {
                   <h5>We Are Here</h5>
                 </div>
                 <p>
-                  Quisque purus augue, facilisis andi neque idont accumsan
-                  fringilla massa. Vivamusol id nibhom condimentum.
+                  To be Sri Lanka’s most trusted and innovative travel partner.
                 </p>
-                <div className="payment-partner">
-                  <div className="widget-title">
-                    <h5>Payment Partner</h5>
-                  </div>
-                  <div className="icons">
-                    <ul>
-                      <li>
-                        <img
-                          src="/assets/img/home1/icon/visa-logo.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="/assets/img/home1/icon/stripe-logo.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="/assets/img/home1/icon/paypal-logo.svg"
-                          alt=""
-                        />
-                      </li>
-                      <li>
-                        <img src="/assets/img/home1/icon/woo-logo.svg" alt="" />
-                      </li>
-                      <li>
-                        <img
-                          src="/assets/img/home1/icon/skrill-logo.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -189,8 +164,7 @@ const Footer = ({style}) => {
                 </li>
               </ul>
               <p>
-                ©Copyright 2023 TripRex | Design By{" "}
-                <a href="https://www.egenslab.com/">Egens Lab</a>
+                ©Copyright 2026 Best Tour Drivers in Sri Lanka
               </p>
               <div className="footer-right">
                 <ul>
