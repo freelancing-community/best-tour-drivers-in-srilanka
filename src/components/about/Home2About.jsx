@@ -18,10 +18,7 @@ const Home2About = () => {
                   </div>
                   <h2>We provide the best tour facilities.</h2>
                   <p>
-                    Etiam ac tortor id purus commodo vulputate. Vestibulum
-                    porttitor erat felis and sed vehicula tortor malesuada
-                    gravida. Mauris volutpat enim quis pulv gont congue.
-                    Suspendisse ullamcorper.
+                   To be Sri Lanka’s most trusted and innovative travel partner, showcasing the island’s beauty to the world while delivering unforgettable, sustainable, and culturally rich travel experiences.
                   </p>
                 </div>
                 <div className="row g-4 mb-50">
@@ -141,7 +138,7 @@ const Home2About = () => {
               <div className="about-img-wrap">
                 <div className="about-img">
                   <img
-                    src="/assets/img/home2/home2-about-img1.png"
+                    src="/assets/img/home2/home2-about-image1.png"
                     alt=""
                     className="about-img"
                   />

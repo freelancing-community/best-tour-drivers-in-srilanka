@@ -35,7 +35,7 @@ const Home2WhyChoose = () => {
                 <div className="eg-section-tag">
                   <span>Who We Are</span>
                 </div>
-                <h2>Why TripRex Is Best</h2>
+                <h2>Why Best Tour Drivers In Sri lanka Is Best</h2>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Home2WhyChoose = () => {
                 </div>
                 <div className="feature-card-content">
                   <h6>Worldwide Coverage</h6>
-                  <p>Curabitur convallis enim atnora ullamcorper sagittis.</p>
+                  <p>Discover tours across Sri Lanka and beyond with carefully selected guides. </p>
                 </div>
               </div>
             </div>
@@ -75,8 +75,7 @@ const Home2WhyChoose = () => {
                 <div className="feature-card-content">
                   <h6>Competitive Pricing</h6>
                   <p>
-                    Burabitur convallis enim atnora. Morbi nug scelerisque for
-                    thana.
+                   Discover tours across Sri Lanka and beyond with carefully selected guides. 
                   </p>
                 </div>
               </div>
@@ -100,7 +99,7 @@ const Home2WhyChoose = () => {
                 <div className="feature-card-content">
                   <h6>Fast Booking</h6>
                   <p>
-                    Fermentum eitorx quis maximum Etiam urnan posuere convallis.
+                    Discover tours across Sri Lanka and beyond with carefully selected guides. 
                   </p>
                 </div>
               </div>
@@ -122,8 +121,7 @@ const Home2WhyChoose = () => {
                 <div className="feature-card-content">
                   <h6>Guided Tours</h6>
                   <p>
-                    Pellentesque venenatis egestasoi diam Proin velgorat elit
-                    porttitor metus convallis.
+                    Discover tours across Sri Lanka and beyond with carefully selected guides. 
                   </p>
                 </div>
               </div>
@@ -148,8 +146,7 @@ const Home2WhyChoose = () => {
                 <div className="feature-card-content">
                   <h6>Best Support 24/7</h6>
                   <p>
-                    Sed venenatis mauris nec nulla euismod, accounv varius
-                    lectus viverra oncen.
+                   Discover tours across Sri Lanka and beyond with carefully selected guides. 
                   </p>
                 </div>
               </div>
@@ -176,8 +173,7 @@ const Home2WhyChoose = () => {
                 <div className="feature-card-content">
                   <h6>Ultimate flexibility</h6>
                   <p>
-                    Duis leo sapien, lacinia utorrent efficitur utom suscipit
-                    quis nulla Sed auctor eu
+                    Discover tours across Sri Lanka and beyond with carefully selected guides. 
                   </p>
                 </div>
               </div>
