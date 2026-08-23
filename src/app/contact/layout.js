@@ -9,7 +9,11 @@ const layout = ({ children }) => {
     <>
       <Topbar />
       <Header />
-      <Breadcrumb pagename="Contact Us" pagetitle="Contact Us" />
+      <Breadcrumb
+        pagename="Contact Us"
+        pagetitle="Contact Us"
+        bgImage="/images/contact-us-image.png"
+      />
       {children}
       <Footer />
     </>

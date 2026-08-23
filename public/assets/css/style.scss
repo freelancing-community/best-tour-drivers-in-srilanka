@@ -834,7 +834,7 @@ ul{
 }
 .primary-btn2{
   border-radius: 5px;
-  background-color: var(--primary-color1);
+  background-color: #F6A824;
   font-family: var(--font-rubik);
   font-weight: 500;
   font-size: 14px;
@@ -7136,6 +7136,8 @@ header.style-3 {
 ========================================*/
 .franctional-slider-section{
   overflow: hidden;position: relative;
+  --primary-color1: #F6A824;
+  --primary-color1-opc: 246, 168, 36;
   .slider-content-wrapper{
     background-image: url(../img/home1/facility-content-bg.png), linear-gradient(180deg, rgba(#F9F4F0, 1) 0%, rgba(#F9F4F0, 1) 100%);
     background-size: cover;
