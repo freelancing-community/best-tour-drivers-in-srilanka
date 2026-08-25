@@ -96,7 +96,7 @@ const TourCard = ({ tour }) => {
   );
 };
 
-const page = () => {
+const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(toursData.length / CARDS_PER_PAGE);
@@ -213,4 +213,5 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
+
