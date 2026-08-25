@@ -17,8 +17,8 @@ const contactCards = [
   },
   {
     label: "Email Now",
-    value: "info@driversinsrilanka.com",
-    href: "mailto:info@driversinsrilanka.com",
+    value: "besttourdriversinsrilanka@gmail.com",
+    href: "mailto:besttourdriversinsrilanka@gmail.com",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="4" />
