@@ -47,7 +47,7 @@ const TourCard = ({ tour }) => {
       <div className="package-card">
         <div className="package-card-img-wrap">
           <Link
-            href={`/package/package-details`}
+            href={`/package/${tour.id}`}
             className="card-img"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -71,7 +71,7 @@ const TourCard = ({ tour }) => {
         <div className="package-card-content">
           <div className="card-content-top">
             <h5>
-              <Link href={`/package/package-details`}>
+              <Link href={`/package/${tour.id}`}>
                 {tour.title}
               </Link>
             </h5>
@@ -80,10 +80,9 @@ const TourCard = ({ tour }) => {
             <div className="price-area">
               <h6>Price From:</h6>
               <span>{price}</span>
-              <p>PER PERSON</p>
             </div>
             <Link
-              href={`/package/package-details`}
+              href={`/package/${tour.id}`}
               className="primary-btn2"
             >
               Book Tour

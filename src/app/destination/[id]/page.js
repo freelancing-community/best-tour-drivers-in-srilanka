@@ -42,7 +42,7 @@ const TourCard = ({ tour }) => {
     <div className="col-lg-4 col-md-6 item">
       <div className="package-card">
         <div className="package-card-img-wrap">
-          <Link href="/package/package-details" className="card-img">
+          <Link href={`/package/${tour.id}`} className="card-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={tour.image} alt={tour.title} />
           </Link>
@@ -64,16 +64,15 @@ const TourCard = ({ tour }) => {
         <div className="package-card-content">
           <div className="card-content-top">
             <h5>
-              <Link href="/package/package-details">{tour.title}</Link>
+              <Link href={`/package/${tour.id}`}>{tour.title}</Link>
             </h5>
           </div>
           <div className="card-content-bottom">
             <div className="price-area">
               <h6>Price From:</h6>
               <span>{price}</span>
-              <p>PER PERSON</p>
             </div>
-            <Link href="/package/package-details" className="primary-btn2">
+            <Link href={`/package/${tour.id}`} className="primary-btn2">
               Book Tour
               <BookIcon />
             </Link>
