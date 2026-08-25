@@ -34,7 +34,7 @@ const DestinationCard = ({ dest, colClass }) => (
   </div>
 );
 
-const page = () => {
+const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(destinationsData.length / CARDS_PER_PAGE);
@@ -156,4 +156,5 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
+
