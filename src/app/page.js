@@ -13,6 +13,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 // import Home1popularTour from "@/components/popularTour/Home1popularTour";
 import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
+import Home1TourPackage from "@/components/tourPackage/Home1TourPackage";
 // import FeaturedToursOctApr from "@/components/tourPackage/FeaturedToursOctApr";
 // import FamilyTourPackagesMaySep from "@/components/tourPackage/FamilyTourPackagesMaySep";
 // import WhyUsProcess from "@/components/whyChoose/WhyUsProcess";
@@ -35,6 +36,7 @@ export default function Home() {
       <Destination1 />
       <Home1Fecilities2 />
       <Home1FacilitySlide />
+      <Home1TourPackage />
       {/* <FeaturedToursOctApr /> */}
       {/* <WhyUsProcess /> */}
       {/* <FamilyTourPackagesMaySep /> */}
