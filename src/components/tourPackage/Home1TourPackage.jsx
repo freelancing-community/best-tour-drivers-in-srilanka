@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import toursData from "@/data/tours.json";
 
 const WaveIcon = ({ flip = false }) => (
   <svg
@@ -18,7 +19,7 @@ const WaveIcon = ({ flip = false }) => (
   </svg>
 );
 
-const PlaneIcon = () => (
+const BookIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={18}
@@ -31,52 +32,22 @@ const PlaneIcon = () => (
   </svg>
 );
 
-const tours = [
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-  {
-    duration: "3 DAYS / 4 NIGHTS",
-    location: "Kandy + Sigiriya Tour",
-    title: "Experience Sri Lanka’s Wonders & Scenic Beauty.",
-    route: ["Colombo", "Kandy", "Sigiriya", "Dambulla", "Colombo"],
-    price: "$3400",
-  },
-];
+const PeopleIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={16}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+  </svg>
+);
 
 const Home1TourPackage = () => {
+  // 6 tours starting from tour id 2 (index 1 to 7 -> tour-002 through tour-007)
+  const homeTours = toursData.slice(1, 7);
+
   return (
     <>
       <div className="package-card-section pt-120 mb-120">
@@ -108,91 +79,69 @@ const Home1TourPackage = () => {
             </div>
           </div>
           <div className="row g-lg-4 gy-5 mb-70">
-            {tours.map((tour, index) => (
-              <div className="col-lg-4 col-md-6" key={index}>
-                <div className="package-card">
-                  <div className="package-card-img-wrap">
-                    <Link href="/package/package-details" className="card-img">
-                      <img
-                        src="/images/elephants-sri-lanka 1.png"
-                        alt={tour.title}
-                      />
-                    </Link>
-                    <div className="batch">
-                      <span
-                        className="date"
-                        style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                      >
-                        {tour.duration}
-                      </span>
-                      <div className="location">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width={18}
-                          height={18}
-                          viewBox="0 0 18 18"
-                          fill="#F6A824"
-                        >
-                          <path
-                            fill="#F6A824"
-                            d="M8.99939 0C5.40484 0 2.48047 2.92437 2.48047 6.51888C2.48047 10.9798 8.31426 17.5287 8.56264 17.8053C8.79594 18.0651 9.20326 18.0646 9.43613 17.8053C9.68451 17.5287 15.5183 10.9798 15.5183 6.51888C15.5182 2.92437 12.5939 0 8.99939 0ZM8.99939 9.79871C7.19088 9.79871 5.71959 8.32739 5.71959 6.51888C5.71959 4.71037 7.19091 3.23909 8.99939 3.23909C10.8079 3.23909 12.2791 4.71041 12.2791 6.51892C12.2791 8.32743 10.8079 9.79871 8.99939 9.79871Z"
-                          />
-                        </svg>
-                        <ul className="location-list">
-                          <li>
-                            <Link
-                              href="/package"
-                              style={{
-                                color: "#000000",
-                                fontWeight: "700",
-                                textTransform: "uppercase",
-                                fontSize: "11px",
-                              }}
-                            >
-                              {tour.location}
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="package-card-content">
-                    <div className="card-content-top">
-                      <h5>
-                        <Link href="/package/package-details">{tour.title}</Link>
-                      </h5>
-                      <div className="location-area">
-                        <ul className="location-list scrollTextAni">
-                          {tour.route.map((stop, stopIndex) => (
-                            <li key={`${stop}-${stopIndex}`}>
-                              <Link href="/package">{stop}</Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="card-content-bottom">
-                      <div className="price-area">
-                        <h6>Starting Form:</h6>
-                        <span>
-                          <span style={{ color: "#F6A824", fontWeight: "800" }}>
-                            {tour.price}
-                          </span>
-                        </span>
-                        <p>TAXES INCL/PERS</p>
-                      </div>
+            {homeTours.map((tour) => {
+              const price = tour.details?.price_from || tour.price || "";
+              const duration = tour.details?.duration || tour.days || "";
+              const maxPeople = tour.details?.max_people || "";
+
+              return (
+                <div className="col-lg-4 col-md-6" key={tour.id}>
+                  <div className="package-card">
+                    <div className="package-card-img-wrap">
                       <Link
                         href="/package/package-details"
-                        className="primary-btn2"
+                        className="card-img"
                       >
-                        Book A Trip
-                        <PlaneIcon />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={tour.image} alt={tour.title} />
                       </Link>
+                      <div className="batch">
+                        <span className="date">{duration}</span>
+                        {maxPeople && (
+                          <div
+                            className="location"
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "5px",
+                            }}
+                          >
+                            <PeopleIcon />
+                            <span style={{ fontSize: "13px", fontWeight: 500 }}>
+                              Max {maxPeople}{" "}
+                              {parseInt(maxPeople) === 1 ? "Person" : "People"}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    <div className="package-card-content">
+                      <div className="card-content-top">
+                        <h5>
+                          <Link href="/package/package-details">
+                            {tour.title}
+                          </Link>
+                        </h5>
+                      </div>
+                      <div className="card-content-bottom">
+                        <div className="price-area">
+                          <h6>Price From:</h6>
+                          <span>{price}</span>
+                          <p>PER PERSON</p>
+                        </div>
+                        <Link
+                          href="/package/package-details"
+                          className="primary-btn2"
+                        >
+                          Book Tour
+                          <BookIcon />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">
