@@ -8,9 +8,9 @@ import Header from "@/components/header/Header";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Visa Information | Best Tour Drivers in Sri Lanka",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Sri Lanka tourist visa guidance and information from Best Tour Drivers in Sri Lanka.",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

@@ -176,6 +176,7 @@ const Header = () => {
             <li><Link href="/offers" className="drop-down">Offers</Link></li>
             <li><Link href="/tailor-mode" className="drop-down">Tailor Mode</Link></li>
             <li><Link href="/about" className="drop-down">About Us</Link></li>
+            <li><Link href="/contact" className="drop-down">Contact Us</Link></li>
           </ul>
           <div className="topbar-right d-lg-none d-block">
             <button

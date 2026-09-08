@@ -5,9 +5,9 @@ import Topbar from "@/components/topbar/Topbar";
 
 
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Tour Guides & Drivers | Best Tour Drivers in Sri Lanka",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Meet our experienced tour guides and private drivers in Sri Lanka.",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
