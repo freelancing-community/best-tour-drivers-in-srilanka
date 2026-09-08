@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Breadcrumb = ({ pagename, pagetitle, bgImage }) => {
-  const image = bgImage || "/assets/img/innerpage/inner-banner-bg.png";
+  const image = bgImage || "/images/contact-us-image.png";
   return (
     <div
       className="breadcrumb-section"
