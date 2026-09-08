@@ -291,7 +291,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
@@ -410,7 +410,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
@@ -534,7 +534,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
@@ -659,7 +659,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
@@ -783,7 +783,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
@@ -908,7 +908,7 @@ const Home1Activities = () => {
                       <div className="content-bottom-area">
                         <Link
                           href="/activities/activities-details"
-                          className="primary-btn2"
+                          className="primary-btn2 d-none"
                         >
                           Check Availability
                         </Link>
