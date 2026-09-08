@@ -30,7 +30,6 @@ export default function Home() {
     <>
       <Header />
       <Banner1 />
-      <Banner1Bottom />
       <About1 />
       {/* <PrivateDriverFeatures /> */}
       <Destination1 />

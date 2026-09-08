@@ -22,7 +22,7 @@ const Topbar2 = () => {
             <a href="mailto:ifo@example.com">info@example.com</a>
           </div>
         </div>
-        <p>
+        <p className="d-none">
           50% Off Your Next Trip. Hurry Up For your new Tour!{" "}
           <a href="#">Book Your Tour</a>{" "}
         </p>
