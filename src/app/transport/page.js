@@ -1,9 +1,9 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Transport Services | Best Tour Drivers in Sri Lanka",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Private vehicle hire, airport transfers, and driver services across Sri Lanka.",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

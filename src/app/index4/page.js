@@ -14,9 +14,9 @@ import Home4Team from "@/components/team/Home4Team";
 import Home4Testimonail from "@/components/testimonial/Home4Testimonail";
 import Home4Vissa from "@/components/visaComponents/Home4Vissa";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Best Tour Drivers in Sri Lanka | Private Drivers & Custom Tours",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Best Tour Drivers in Sri Lanka offers reliable private drivers, custom tour packages, and travel experiences.",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

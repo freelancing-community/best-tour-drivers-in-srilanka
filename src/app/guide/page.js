@@ -1,8 +1,8 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Our Tour Guides | Best Tour Drivers in Sri Lanka",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Meet our experienced tour guides and private drivers in Sri Lanka.",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
