@@ -12,7 +12,7 @@ const Banner1 = () => {
             style={{
               backgroundImage:
                 "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(/images/homepage-cover-photo.png)",
-              borderRadius: "30px 30px 0 0",
+              borderRadius: "30px",
               minHeight: "80vh",
               display: "flex",
               alignItems: "center",
@@ -91,7 +91,7 @@ const Banner1 = () => {
             padding: 12px 3% !important;
           }
           .home1-banner-wrapper {
-            border-radius: 20px 20px 0 0 !important;
+            border-radius: 20px !important;
             min-height: 60vh !important;
           }
         }

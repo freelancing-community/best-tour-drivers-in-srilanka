@@ -47,7 +47,7 @@ const Topbar = () => {
             </div>
           </a>
         </div>
-        <p>
+        <p className="d-none">
           50% Off Your Next Trip. Hurry Up For your new Tour!{" "}
           <Link href="/package">Book Your Tour</Link>{" "}
         </p>
