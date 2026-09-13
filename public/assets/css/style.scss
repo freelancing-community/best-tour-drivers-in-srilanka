@@ -305,8 +305,12 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none !important;
 }
 
 p {
