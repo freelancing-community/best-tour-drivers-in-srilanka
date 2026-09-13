@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Explore our travel articles and guides from Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

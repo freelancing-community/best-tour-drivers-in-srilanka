@@ -70,7 +70,11 @@ const Page = () => {
 
   return (
     <>
-      <Breadcrumb pagename="Destinations" pagetitle="Destinations" />
+      <Breadcrumb
+        pagename="Destinations"
+        pagetitle="Destinations"
+        bgImage="/images/breadcrumb/daniel-klein-Qx8_d5dGhrs-unsplash.jpg"
+      />
       <div className="destination-gallery-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5 mb-70">

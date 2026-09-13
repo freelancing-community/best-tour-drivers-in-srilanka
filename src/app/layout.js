@@ -16,6 +16,7 @@ import "../../public/assets/css/style.css";
 import "../../public/assets/css/dashboard.css";
 import { useEffect } from "react";
 
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -24,6 +25,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body>{children}</body>
     </html>

@@ -13,7 +13,7 @@ export const metadata = {
   description:
     "Learn more about Best Tour Drivers in Sri Lanka, your trusted partner for private tour drivers, customized itineraries, and island-wide travel in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const page = () => {
@@ -21,7 +21,11 @@ const page = () => {
     <>
       <Topbar />
       <Header />
-      <Breadcrumb pagename="About Us" pagetitle="About Us" />
+      <Breadcrumb
+        pagename="About Us"
+        pagetitle="About Us"
+        bgImage="/images/breadcrumb/abdulla-faiz-7yPjauuz858-unsplash.jpg"
+      />
       <Home2About />
       <Home2WhyChoose />
       {/* <Home2Activities /> */}

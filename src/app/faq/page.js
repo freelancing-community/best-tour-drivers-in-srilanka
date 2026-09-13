@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Find answers to frequently asked questions about booking tour drivers and traveling in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const page = () => {

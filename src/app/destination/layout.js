@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Discover top travel destinations across Sri Lanka with private drivers from Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const layout = ({children}) => {

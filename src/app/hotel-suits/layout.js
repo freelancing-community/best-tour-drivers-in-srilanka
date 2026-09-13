@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Find top recommended hotels and accommodations in Sri Lanka with Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

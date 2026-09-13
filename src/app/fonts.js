@@ -1,10 +1,7 @@
 import {
-  Inter,
-  Roboto_Mono,
   Rubik,
   Jost,
-  Satisfy,
-  Sansita,
+  Dancing_Script,
 } from "next/font/google";
 
 // export const inter = Inter({
@@ -23,4 +20,10 @@ export const rubik = Rubik({
 export const jost = Jost({
   subsets: ["latin"],
   display: "swap",
+});
+export const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  display: "swap",
+  variable: "--font-satisfy",
 });

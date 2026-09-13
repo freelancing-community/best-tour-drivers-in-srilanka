@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Sri Lanka tourist visa guidance and information from Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const page = () => {

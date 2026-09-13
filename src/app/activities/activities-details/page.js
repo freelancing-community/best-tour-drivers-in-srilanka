@@ -861,7 +861,7 @@ onClick={() => setOpenModalVideo(true)}><i className="bi bi-play-circle" /> Watc
           channel="youtube"
           onClick={() => setOpenModalVideo(true)}
           isOpen={isOpenModalVideo}
-          animationSpeed="350"
+          animationSpeed={350}
           videoId="r4KpWiK08vM"
           ratio="16:9"
           onClose={() => setOpenModalVideo(false)}

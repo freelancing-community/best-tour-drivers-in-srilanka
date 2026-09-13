@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Explore top activities, adventures, and things to do in Sri Lanka with Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const page = () => {

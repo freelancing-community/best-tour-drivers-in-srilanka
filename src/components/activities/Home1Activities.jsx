@@ -415,7 +415,7 @@ const Home1Activities = () => {
                           Check Availability
                         </Link>
                         <a
-                         
+
                           style={{ cursor: "pointer" }}
                           onClick={() => setOpen(true)}
                           className="video-area video1"

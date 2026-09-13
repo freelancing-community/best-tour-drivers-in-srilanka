@@ -134,7 +134,11 @@ const Page = () => {
     <>
       <Topbar />
       <Header />
-      <Breadcrumb pagename="Tour Packages" pagetitle="Tour Packages" />
+      <Breadcrumb
+        pagename="Tour Packages"
+        pagetitle="Tour Packages"
+        bgImage="/images/breadcrumb/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
+      />
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
         <div className="container">
           {/* Top bar: results count */}
