@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Newslatter from "@/components/common/Newslatter";
+import { showErrorAlert, showSuccessAlert } from "@/lib/alert";
 
 const ACCENT = "#F6A824";
 
@@ -87,11 +88,53 @@ const WhatsAppIcon = () => (
 );
 
 const ContactPage = () => {
-  const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    whatsapp: "",
+    email: "",
+    message: "",
+  });
 
-  const handleSubmit = (event) => {
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setSent(true);
+    setSubmitting(true);
+    try {
+      const response = await fetch("/api/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          guestName: form.name,
+          guestPhone: form.whatsapp,
+          guestEmail: form.email,
+          message: form.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Failed to send message");
+      }
+
+      await showSuccessAlert(
+        "Message received",
+        "Thank you. Our team will get back to you shortly."
+      );
+      setForm({ name: "", whatsapp: "", email: "", message: "" });
+    } catch (error) {
+      showErrorAlert(
+        "Unable to send message",
+        error.message || "Something went wrong. Please try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -129,23 +172,55 @@ const ContactPage = () => {
                   <div className="row g-3">
                     <div className="col-12">
                       <label htmlFor="cu-name">Your Name*</label>
-                      <input id="cu-name" type="text" name="name" placeholder="Your name" required />
+                      <input
+                        id="cu-name"
+                        type="text"
+                        name="name"
+                        placeholder="Your name"
+                        value={form.name}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
                     <div className="col-md-6">
                       <label htmlFor="cu-whatsapp">WhatsApp Number*</label>
-                      <input id="cu-whatsapp" type="tel" name="whatsapp" placeholder="WhatsApp number" required />
+                      <input
+                        id="cu-whatsapp"
+                        type="tel"
+                        name="whatsapp"
+                        placeholder="WhatsApp number"
+                        value={form.whatsapp}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
                     <div className="col-md-6">
                       <label htmlFor="cu-email">Email*</label>
-                      <input id="cu-email" type="email" name="email" placeholder="Email address" required />
+                      <input
+                        id="cu-email"
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                        value={form.email}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
                     <div className="col-12">
                       <label htmlFor="cu-message">Write your Message*</label>
-                      <textarea id="cu-message" name="message" rows={6} placeholder="What’s on your mind" required />
+                      <textarea
+                        id="cu-message"
+                        name="message"
+                        rows={6}
+                        placeholder="What’s on your mind"
+                        value={form.message}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
                     <div className="col-12">
-                      <button type="submit" className="cu-submit">
-                        {sent ? "Message Sent" : "Submit"}
+                      <button type="submit" className="cu-submit" disabled={submitting}>
+                        {submitting ? "Sending..." : "Submit"}
                       </button>
                     </div>
                   </div>

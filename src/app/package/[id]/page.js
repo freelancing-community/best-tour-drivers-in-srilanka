@@ -6,6 +6,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { showErrorAlert, showSuccessAlert, showWarningAlert } from "@/lib/alert";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
@@ -154,8 +155,13 @@ const TourDetailPage = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
   const [ticketCount, setTicketCount] = useState(1);
-  const [bookingSubmitted, setBookingSubmitted] = useState(false);
-  const [inquirySubmitted, setInquirySubmitted] = useState(false);
+  const [bookingSubmitting, setBookingSubmitting] = useState(false);
+  const [inquirySubmitting, setInquirySubmitting] = useState(false);
+  const [bookingForm, setBookingForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
 
   // Inquiry form state
   const [inquiryForm, setInquiryForm] = useState({
@@ -210,14 +216,99 @@ const TourDetailPage = () => {
   }));
 
   // ── form helpers ───────────────────────────────────────────────────────────
-  const handleBookingSubmit = (e) => {
-    e.preventDefault();
-    setBookingSubmitted(true);
+  const formatBookingDate = (date) => {
+    if (!date) return "";
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
   };
 
-  const handleInquirySubmit = (e) => {
+  const handleBookingSubmit = async (e) => {
     e.preventDefault();
-    setInquirySubmitted(true);
+    if (!selectedDate) {
+      showWarningAlert("Date required", "Please select a tour start date.");
+      return;
+    }
+
+    setBookingSubmitting(true);
+    try {
+      const response = await fetch("/api/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "booking",
+          tourId,
+          guestName: bookingForm.name,
+          guestEmail: bookingForm.email,
+          guestPhone: bookingForm.phone,
+          date: formatBookingDate(selectedDate),
+          time: selectedTime,
+          ticketCount,
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Failed to submit booking");
+      }
+
+      await showSuccessAlert(
+        "Booking request received",
+        "Thank you. Our team will contact you shortly to confirm your tour."
+      );
+
+      setBookingForm({ name: "", email: "", phone: "" });
+      setSelectedDate(null);
+      setSelectedTime("");
+      setTicketCount(1);
+    } catch (error) {
+      showErrorAlert(
+        "Unable to submit booking",
+        error.message || "Something went wrong. Please try again."
+      );
+    } finally {
+      setBookingSubmitting(false);
+    }
+  };
+
+  const handleInquirySubmit = async (e) => {
+    e.preventDefault();
+    setInquirySubmitting(true);
+    try {
+      const response = await fetch("/api/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "inquiry",
+          tourId,
+          guestName: inquiryForm.name,
+          guestEmail: inquiryForm.email,
+          guestPhone: inquiryForm.phone,
+          message: inquiryForm.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Failed to submit inquiry");
+      }
+
+      await showSuccessAlert(
+        "Inquiry received",
+        "Thank you. Our team will get back to you as soon as possible."
+      );
+
+      setInquiryForm({ name: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      showErrorAlert(
+        "Unable to submit inquiry",
+        error.message || "Something went wrong. Please try again."
+      );
+    } finally {
+      setInquirySubmitting(false);
+    }
   };
 
   return (
@@ -489,13 +580,44 @@ const TourDetailPage = () => {
                     aria-labelledby={`pill-booking-tab-${tourId}`}
                   >
                     <div className="sidebar-booking-form">
-                      {bookingSubmitted ? (
-                        <div className="alert alert-success" role="alert">
-                          <i className="bi bi-check-circle me-2" />
-                          Thank you! Your booking request has been submitted. We will contact you shortly.
-                        </div>
-                      ) : (
                         <form onSubmit={handleBookingSubmit}>
+                          <div className="form-inner mb-20">
+                            <label style={{ fontWeight: 600, display: "block", marginBottom: 8 }}>
+                              Full Name <span style={{ color: "red" }}>*</span>
+                            </label>
+                            <input
+                              type="text"
+                              placeholder="Enter your full name"
+                              value={bookingForm.name}
+                              onChange={(e) => setBookingForm({ ...bookingForm, name: e.target.value })}
+                              required
+                            />
+                          </div>
+                          <div className="form-inner mb-20">
+                            <label style={{ fontWeight: 600, display: "block", marginBottom: 8 }}>
+                              Email Address <span style={{ color: "red" }}>*</span>
+                            </label>
+                            <input
+                              type="email"
+                              placeholder="Enter your email address"
+                              value={bookingForm.email}
+                              onChange={(e) => setBookingForm({ ...bookingForm, email: e.target.value })}
+                              required
+                            />
+                          </div>
+                          <div className="form-inner mb-20">
+                            <label style={{ fontWeight: 600, display: "block", marginBottom: 8 }}>
+                              Phone Number <span style={{ color: "red" }}>*</span>
+                            </label>
+                            <input
+                              type="tel"
+                              placeholder="Enter your phone number"
+                              value={bookingForm.phone}
+                              onChange={(e) => setBookingForm({ ...bookingForm, phone: e.target.value })}
+                              required
+                            />
+                          </div>
+
                           {/* Date Picker */}
                           <div className="form-inner mb-25">
                             <label style={{ fontWeight: 600, display: "block", marginBottom: 8 }}>
@@ -550,11 +672,10 @@ const TourDetailPage = () => {
                           </div>
 
                           {/* Submit */}
-                          <button type="submit" className="primary-btn1 two">
-                            Book Now
+                          <button type="submit" className="primary-btn1 two" disabled={bookingSubmitting}>
+                            {bookingSubmitting ? "Submitting..." : "Book Now"}
                           </button>
                         </form>
-                      )}
                     </div>
                   </div>
 
@@ -566,12 +687,6 @@ const TourDetailPage = () => {
                     aria-labelledby={`pill-inquiry-tab-${tourId}`}
                   >
                     <div className="sidebar-booking-form">
-                      {inquirySubmitted ? (
-                        <div className="alert alert-success" role="alert">
-                          <i className="bi bi-check-circle me-2" />
-                          Thank you! Your inquiry has been submitted. We will contact you shortly.
-                        </div>
-                      ) : (
                         <form onSubmit={handleInquirySubmit}>
                           <div className="form-inner mb-20">
                             <label>Full Name <span style={{ color: "red" }}>*</span></label>
@@ -610,16 +725,14 @@ const TourDetailPage = () => {
                               value={inquiryForm.message}
                               onChange={(e) => setInquiryForm({ ...inquiryForm, message: e.target.value })}
                               required
-                              defaultValue=""
                             />
                           </div>
                           <div className="form-inner">
-                            <button type="submit" className="primary-btn1 two">
-                              Submit Now
+                            <button type="submit" className="primary-btn1 two" disabled={inquirySubmitting}>
+                              {inquirySubmitting ? "Submitting..." : "Submit Now"}
                             </button>
                           </div>
                         </form>
-                      )}
                     </div>
                   </div>
                 </div>

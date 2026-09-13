@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import countriesData from "@/data/countries.json";
+import { showErrorAlert, showSuccessAlert, showWarningAlert } from "@/lib/alert";
 
 const ACCENT = "#E08B12";
 
@@ -256,7 +257,7 @@ const TailorModePage = () => {
     specialRequests: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -266,9 +267,94 @@ const TailorModePage = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const initialFormData = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneCode: "+1",
+    phoneNumber: "",
+    communicationWhatsApp: false,
+    communicationEmail: false,
+    country: "",
+    adults: "2",
+    children: "0",
+    infants: "0",
+    arrivalDate: "",
+    arrivalHour: "Select",
+    arrivalMinute: "Select",
+    arrivalAmPm: "AM",
+    departureDate: "",
+    departureHour: "Select",
+    departureMinute: "Select",
+    departureAmPm: "AM",
+    currency: "USD",
+    arrangeAccommodation: "No",
+    hasTourPlan: "No",
+    specialRequests: "",
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    if (!formData.communicationWhatsApp && !formData.communicationEmail) {
+      showWarningAlert(
+        "Preferred contact required",
+        "Please select WhatsApp and/or Email as your preferred communication method."
+      );
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const response = await fetch("/api/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "tailor",
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          guestEmail: formData.email,
+          phoneCode: formData.phoneCode,
+          phoneNumber: formData.phoneNumber,
+          communicationWhatsApp: formData.communicationWhatsApp,
+          communicationEmail: formData.communicationEmail,
+          country: formData.country,
+          adults: formData.adults,
+          children: formData.children,
+          infants: formData.infants,
+          arrivalDate: formData.arrivalDate,
+          arrivalHour: formData.arrivalHour,
+          arrivalMinute: formData.arrivalMinute,
+          arrivalAmPm: formData.arrivalAmPm,
+          departureDate: formData.departureDate,
+          departureHour: formData.departureHour,
+          departureMinute: formData.departureMinute,
+          departureAmPm: formData.departureAmPm,
+          currency: formData.currency,
+          arrangeAccommodation: formData.arrangeAccommodation,
+          hasTourPlan: formData.hasTourPlan,
+          specialRequests: formData.specialRequests,
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Failed to submit request");
+      }
+
+      await showSuccessAlert(
+        "Request received",
+        "Thank you. Our team will review your tailor-made tour request and contact you within 24 hours."
+      );
+      setFormData(initialFormData);
+    } catch (error) {
+      showErrorAlert(
+        "Unable to submit request",
+        error.message || "Something went wrong. Please try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const hoursOptions = ["Select", ...Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, "0"))];
@@ -278,23 +364,6 @@ const TailorModePage = () => {
     <div className="tailor-mode-wrapper">
       <div className="container py-5">
         <div className="tailor-card shadow-sm p-4 p-md-5 bg-white rounded-3">
-          {submitted ? (
-            <div className="alert alert-success text-center py-5 rounded-3">
-              <div className="mb-3">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#28a745" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" strokeLinecap="round" strokeLinejoin="round" />
-                  <polyline points="22 4 12 14.01 9 11.01" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <h3 className="fw-bold mb-2">Thank You for Your Request!</h3>
-              <p className="lead text-muted mb-4">
-                We have received your tailor-made tour request. Our team will review your details and reach out to you within 24 hours via your preferred communication method.
-              </p>
-              <button className="primary-btn2" onClick={() => setSubmitted(false)}>
-                Submit Another Request
-              </button>
-            </div>
-          ) : (
             <form onSubmit={handleSubmit}>
               {/* SECTION 1: PERSONAL INFORMATION */}
               <div className="tailor-section mb-5">
@@ -737,12 +806,11 @@ const TailorModePage = () => {
 
               {/* SECTION 4: SEND REQUEST BUTTON */}
               <div className="mb-5">
-                <button type="submit" className="send-request-btn">
-                  SEND REQUEST
+                <button type="submit" className="send-request-btn" disabled={submitting}>
+                  {submitting ? "SENDING..." : "SEND REQUEST"}
                 </button>
               </div>
             </form>
-          )}
         </div>
       </div>
 

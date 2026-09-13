@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tour Inquiry</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f7fb;font-family:Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f4f7fb;padding:32px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(46,49,146,0.08);">
+          <!-- Accent bar -->
+          <tr>
+            <td style="height:6px;background:linear-gradient(90deg,#00AEEF 0%,#2E3192 55%,#F6A824 100%);font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+
+          <!-- Logo -->
+          <tr>
+            <td align="center" style="padding:28px 24px 12px;">
+              <img src="https://i.ibb.co/VphF6y0G/logo.png" alt="Best Tour Drivers in Sri Lanka" width="160" style="display:block;max-width:160px;height:auto;border:0;" />
+            </td>
+          </tr>
+
+          <!-- Title -->
+          <tr>
+            <td align="center" style="padding:8px 28px 4px;">
+              <h1 style="margin:0;font-size:22px;line-height:1.35;color:#2E3192;font-weight:700;">New Tour Inquiry</h1>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:0 28px 20px;">
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#555555;">
+                Someone sent an inquiry about a tour. Guest details and their message are below.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Details card -->
+          <tr>
+            <td style="padding:0 24px 24px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f8fbff;border:1px solid #e3eef8;border-radius:10px;">
+                <tr>
+                  <td style="padding:20px 22px;">
+                    <p style="margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#00AEEF;">Guest details</p>
+
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-size:14px;color:#222222;">
+                      <tr>
+                        <td style="padding:8px 0;width:38%;color:#6b7280;vertical-align:top;">Guest name</td>
+                        <td style="padding:8px 0;font-weight:600;vertical-align:top;">{{ params.guest_name }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Phone</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.guest_phone }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Email</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.guest_email }}</td>
+                      </tr>
+                    </table>
+
+                    <p style="margin:22px 0 14px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#F6A824;">Tour reference</p>
+
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-size:14px;color:#222222;">
+                      <tr>
+                        <td style="padding:8px 0;width:38%;color:#6b7280;vertical-align:top;">Tour</td>
+                        <td style="padding:8px 0;font-weight:600;vertical-align:top;">{{ params.tour_title }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Tour ID</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.tour_id }}</td>
+                      </tr>
+                    </table>
+
+                    <p style="margin:22px 0 10px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#2E3192;">Message</p>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff;border:1px solid #e8eef5;border-radius:8px;">
+                      <tr>
+                        <td style="padding:14px 16px;font-size:14px;line-height:1.6;color:#333333;white-space:pre-wrap;">{{ params.message }}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CTA note -->
+          <tr>
+            <td style="padding:0 28px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#eef9fd;border-left:4px solid #00AEEF;border-radius:6px;">
+                <tr>
+                  <td style="padding:14px 16px;font-size:13px;line-height:1.55;color:#1f4b5c;">
+                    Reply to the guest using their email or phone number to continue the conversation.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding:20px 24px 28px;border-top:1px solid #eef2f7;background-color:#fafbfd;">
+              <p style="margin:0 0 4px;font-size:14px;font-weight:700;color:#2E3192;">Best Tour Drivers in Sri Lanka</p>
+              <p style="margin:0;font-size:12px;color:#00AEEF;letter-spacing:0.02em;">WE MAKE YOUR DREAM HOLIDAY</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
