@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tailor-Made Tour Request</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f7fb;font-family:Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f4f7fb;padding:32px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(46,49,146,0.08);">
+          <tr>
+            <td style="height:6px;background:linear-gradient(90deg,#00AEEF 0%,#2E3192 55%,#F6A824 100%);font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:28px 24px 12px;">
+              <img src="https://i.ibb.co/VphF6y0G/logo.png" alt="Best Tour Drivers in Sri Lanka" width="160" style="display:block;max-width:160px;height:auto;border:0;" />
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:8px 28px 4px;">
+              <h1 style="margin:0;font-size:22px;line-height:1.35;color:#2E3192;font-weight:700;">New Tailor-Made Tour Request</h1>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:0 28px 20px;">
+              <p style="margin:0;font-size:14px;line-height:1.6;color:#555555;">
+                A guest submitted a custom tour request from Tailor Mode. Full trip details are below.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 24px 24px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f8fbff;border:1px solid #e3eef8;border-radius:10px;">
+                <tr>
+                  <td style="padding:20px 22px;">
+                    <p style="margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#00AEEF;">Guest details</p>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-size:14px;color:#222222;">
+                      <tr>
+                        <td style="padding:8px 0;width:40%;color:#6b7280;vertical-align:top;">Guest name</td>
+                        <td style="padding:8px 0;font-weight:600;vertical-align:top;">{{ params.guest_name }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Phone</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.guest_phone }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Email</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.guest_email }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Preferred contact</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.preferred_communication }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Country</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.country }}</td>
+                      </tr>
+                    </table>
+
+                    <p style="margin:22px 0 14px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#F6A824;">Trip details</p>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-size:14px;color:#222222;">
+                      <tr>
+                        <td style="padding:8px 0;width:40%;color:#6b7280;vertical-align:top;">Travelers</td>
+                        <td style="padding:8px 0;font-weight:600;vertical-align:top;">{{ params.travelers }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Arrival</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.arrival }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Departure</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.departure }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Currency</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.currency }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Accommodation</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.arrange_accommodation }}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;color:#6b7280;vertical-align:top;">Has tour plan</td>
+                        <td style="padding:8px 0;border-top:1px solid #e8eef5;font-weight:600;vertical-align:top;">{{ params.has_tour_plan }}</td>
+                      </tr>
+                    </table>
+
+                    <p style="margin:22px 0 10px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#2E3192;">Special requests</p>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff;border:1px solid #e8eef5;border-radius:8px;">
+                      <tr>
+                        <td style="padding:14px 16px;font-size:14px;line-height:1.6;color:#333333;white-space:pre-wrap;">{{ params.special_requests }}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#fff8eb;border-left:4px solid #F6A824;border-radius:6px;">
+                <tr>
+                  <td style="padding:14px 16px;font-size:13px;line-height:1.55;color:#5a4a2a;">
+                    Contact the guest using their preferred communication method to continue planning.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:20px 24px 28px;border-top:1px solid #eef2f7;background-color:#fafbfd;">
+              <p style="margin:0 0 4px;font-size:14px;font-weight:700;color:#2E3192;">Best Tour Drivers in Sri Lanka</p>
+              <p style="margin:0;font-size:12px;color:#00AEEF;letter-spacing:0.02em;">WE MAKE YOUR DREAM HOLIDAY</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
