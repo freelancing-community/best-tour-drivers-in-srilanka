@@ -4,7 +4,7 @@ export const metadata = {
   description:
     "Meet our experienced tour guides and private drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

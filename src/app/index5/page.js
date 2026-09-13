@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "Best Tour Drivers in Sri Lanka offers reliable private drivers, custom tour packages, and travel experiences.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 const page = () => {

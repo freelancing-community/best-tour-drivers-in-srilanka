@@ -86,11 +86,11 @@ const Destination1 = () => {
               <div className="destination-banner">
                 <div className="destination-banner-content">
                   <div className="batch">
-                    <span>Get 10% Off</span>
+                    <span>Explore Sri Lanka</span>
                   </div>
-                  <h2>Of Our All Destination</h2>
+                  <h2>Discover All Destinations</h2>
                   <Link href="/destination" className="primary-btn1">
-                    View All Destination
+                    View All Destinations
                   </Link>
                 </div>
               </div>

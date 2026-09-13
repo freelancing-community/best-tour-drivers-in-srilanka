@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Customize your ideal Sri Lanka holiday with private driver & guide services. Fill in your personal details, tour dates, and preferences for a bespoke itinerary.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 
@@ -19,7 +19,11 @@ const Page = () => {
     <>
       <Topbar />
       <Header />
-      <Breadcrumb pagename="Tailor Made Tour" pagetitle="Tailor Mode" />
+      <Breadcrumb
+        pagename="Tailor Made Tour"
+        pagetitle="Tailor Mode"
+        bgImage="/images/breadcrumb/jerry-kavan-i9eaAR4dWi8-unsplash.jpg"
+      />
       <TailorModePage />
       <Newslatter />
       <Footer />

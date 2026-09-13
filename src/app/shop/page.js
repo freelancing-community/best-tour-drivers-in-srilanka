@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Travel shop and merchandise from Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

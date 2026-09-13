@@ -47,12 +47,6 @@ const Footer = ({style}) => {
                     <Link href="/package-grid">Tour Package</Link>
                   </li>
                   <li>
-                    <Link href="/guide2">Tour Guide</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-grid">Article</Link>
-                  </li>
-                  <li>
                     <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
@@ -111,8 +105,8 @@ const Footer = ({style}) => {
                     </svg>
                     <h5>Address</h5>
                   </div>
-                  <a href="https://www.google.com/maps">
-                    No.555,1,A, test, test
+                  <a href="https://maps.google.com/?q=11+Siri+Niwasa+Mawatha,+Kalutara+North,+Sri+Lanka" target="_blank" rel="noopener noreferrer">
+                    No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka.
                   </a>
                 </div>
               </div>

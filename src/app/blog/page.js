@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Read travel guides, driver tips, and Sri Lanka holiday ideas from Best Tour Drivers in Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

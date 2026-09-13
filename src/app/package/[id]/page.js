@@ -168,7 +168,11 @@ const TourDetailPage = () => {
       <>
         <Topbar />
         <Header />
-        <Breadcrumb pagename="Tour Not Found" pagetitle="Tour Not Found" />
+        <Breadcrumb
+          pagename="Tour Not Found"
+          pagetitle="Tour Not Found"
+          bgImage="/images/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
+        />
         <div className="container py-5 text-center">
           <h3>Tour not found.</h3>
           <Link href="/package" className="primary-btn1 mt-3 d-inline-block">
@@ -220,7 +224,11 @@ const TourDetailPage = () => {
     <>
       <Topbar />
       <Header />
-      <Breadcrumb pagename={tour.title} pagetitle="Tour Details" />
+      <Breadcrumb
+        pagename={tour.title}
+        pagetitle="Tour Details"
+        bgImage="/images/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
+      />
 
       <div className="package-details-area pt-120 mb-120 position-relative">
         <div className="container">

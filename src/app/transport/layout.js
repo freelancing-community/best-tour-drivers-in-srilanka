@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Private vehicle hire, airport transfers, and driver services across Sri Lanka.",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "/images/logo.png",
   },
 };
 

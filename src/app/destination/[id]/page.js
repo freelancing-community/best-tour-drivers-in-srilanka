@@ -94,7 +94,11 @@ const DestinationDetailsPage = () => {
   if (!destination) {
     return (
       <>
-        <Breadcrumb pagename="Destination Not Found" pagetitle="Destination Details" />
+        <Breadcrumb
+          pagename="Destination Not Found"
+          pagetitle="Destination Details"
+          bgImage="/images/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
+        />
         <div className="container pt-120 mb-120 text-center">
           <h2>Destination Not Found</h2>
           <p className="mt-3">The destination you are looking for does not exist.</p>
@@ -121,6 +125,7 @@ const DestinationDetailsPage = () => {
       <Breadcrumb
         pagename={destination.title}
         pagetitle="Destination Details"
+        bgImage="/images/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
       />
       <div className="destination-details-wrap mb-120 pt-120">
         <div className="container">
