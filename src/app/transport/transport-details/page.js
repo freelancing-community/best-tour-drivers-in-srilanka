@@ -16,14 +16,14 @@ const Page = () => {
   const settings = useMemo(() => {
     return {
       slidesPerView: "auto",
-			speed: 1500,
-			spaceBetween: 10,
-			loop: true,
-			autoplay: false,
-		navigation: {
-			nextEl: ".product-stand-next",
-			prevEl: ".product-stand-prev",
-		},
+      speed: 1500,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: false,
+      navigation: {
+        nextEl: ".product-stand-next",
+        prevEl: ".product-stand-prev",
+      },
 
     };
   }, []);
