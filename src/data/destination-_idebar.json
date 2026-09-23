@@ -1,30 +1,30 @@
 [
     {
         "id": "1",
-        "img": "/assets/img/home2/destination-card-sidebar-img1.png",
-        "tour_palce": "5",
-        "tour_type": "Travel To",
-        "place": " New York"
+        "img": "https://images.unsplash.com/photo-1653478673261-4937126eb512?w=400&auto=format&fit=crop&q=60",
+        "tour_palce": "17",
+        "tour_type": "Explore",
+        "place": "Gangarama Temple"
     },
     {
         "id": "2",
-        "img": "/assets/img/home2/destination-card-sidebar-img2.png",
-        "tour_palce": "8",
-        "tour_type": "Travel To",
-        "place": " Switzerland"
+        "img": "https://plus.unsplash.com/premium_photo-1712093436790-08c0bd6cae40?w=400&auto=format&fit=crop&q=60",
+        "tour_palce": "5",
+        "tour_type": "Explore",
+        "place": "Anuradhapura"
     },
     {
         "id": "3",
-        "img": "/assets/img/home2/destination-card-sidebar-img3.png",
-        "tour_palce": "8",
-        "tour_type": "Travel To",
-        "place": "   Saudi Arab"
+        "img": "https://images.unsplash.com/photo-1709729508706-87741ec2d50a?w=400&auto=format&fit=crop&q=60",
+        "tour_palce": "19",
+        "tour_type": "Explore",
+        "place": "Polonnaruwa"
     },
     {
         "id": "4",
-        "img": "/assets/img/home2/destination-card-sidebar-img4.png",
-        "tour_palce": "5",
-        "tour_type": "Travel To",
-        "place": "  Indonesia"
+        "img": "https://images.unsplash.com/photo-1631774934803-554afa7371c9?w=400&auto=format&fit=crop&q=60",
+        "tour_palce": "9",
+        "tour_type": "Explore",
+        "place": "Dambulla Cave Temple"
     }
 ]

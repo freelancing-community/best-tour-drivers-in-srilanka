@@ -12,7 +12,7 @@ import Home1Fecilities2 from "@/components/facilitySlide/Home1Fecilities2";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 // import Home1popularTour from "@/components/popularTour/Home1popularTour";
-import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
+// import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
 import Home1TourPackage from "@/components/tourPackage/Home1TourPackage";
 // import FeaturedToursOctApr from "@/components/tourPackage/FeaturedToursOctApr";
 // import FamilyTourPackagesMaySep from "@/components/tourPackage/FamilyTourPackagesMaySep";
@@ -42,7 +42,7 @@ export default function Home() {
       {/* <Home1popularTour /> */}
       <Home1Activities />
       <Home1Banner2 />
-      <Home1Testimonail />
+      {/* <Home1Testimonail /> */}
       {/* <ChooseYourDestinations /> */}
       <Newslatter />
       <Footer />
