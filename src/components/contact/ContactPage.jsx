@@ -8,7 +8,7 @@ const ACCENT = "#F6A824";
 const contactCards = [
   {
     label: "WhatsApp/Voice",
-    value: "+94 74 380 1833",
+    value: "+94 762 205 763",
     href: "https://wa.me/94743801833",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke={ACCENT} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

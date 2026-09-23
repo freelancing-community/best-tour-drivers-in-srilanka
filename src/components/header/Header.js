@@ -216,7 +216,7 @@ const Header = () => {
             <div className="content">
               <span>To More Inquiry</span>
               <h6>
-                <a href="tel:+990737621432">+990-737 621 432</a>
+                <a href="tel:+94743801833">+94 762 205 763</a>
               </h6>
             </div>
           </div>
@@ -249,7 +249,7 @@ const Header = () => {
             <div className="content">
               <span>To More Inquiry</span>
               <h6>
-                <a href="tel:+94743801833" style={{ color: "#F6A824" }}>+94 74 380 1833</a>
+                <a href="tel:+94743801833" style={{ color: "#F6A824" }}>+94 762 205 763</a>
               </h6>
             </div>
           </div>
@@ -269,9 +269,8 @@ const Header = () => {
         </div>
       </header>
       <div
-        className={`right-sidebar-menu ${
-          state.isRightSidebar ? "show-right-menu" : ""
-        }`}
+        className={`right-sidebar-menu ${state.isRightSidebar ? "show-right-menu" : ""
+          }`}
       >
         <div className="sidebar-logo-area d-flex justify-content-between align-items-center">
           <div className="sidebar-logo-wrap">
@@ -289,7 +288,7 @@ const Header = () => {
             <ul className="category-list">
               <li>
                 <Link
-                  href="/activities/activities-details"
+                  href="/package"
                   className="single-category"
                 >
                   <div className="icon">
@@ -308,7 +307,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/activities/activities-details"
+                  href="/package"
                   className="single-category"
                 >
                   <div className="icon">
@@ -330,7 +329,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/activities/activities-details"
+                  href="/package"
                   className="single-category"
                 >
                   <div className="icon">
@@ -371,7 +370,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/activities/activities-details"
+                  href="/package"
                   className="single-category"
                 >
                   <div className="icon">
@@ -395,7 +394,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/activities/activities-details"
+                  href="/package"
                   className="single-category"
                 >
                   <div className="icon">
@@ -507,7 +506,7 @@ const Header = () => {
             <div className="content">
               <span>To More Inquiry</span>
               <h6>
-                <a href="tel:+990737621432">+990-737 621 432</a>
+                <a href="tel:+94743801833">+94 762 205 763</a>
               </h6>
             </div>
           </div>
@@ -527,7 +526,7 @@ const Header = () => {
             <div className="content">
               <span>Email:</span>
               <h6>
-                <a href="mailto:info@gmail.com">info@gmail.com</a>
+                <a href="mailto:besttourdriversinsrilanka@gmail.com">besttourdriversinsrilanka@gmail.com</a>
               </h6>
             </div>
           </div>

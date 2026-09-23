@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Footer = ({style}) => {
+const Footer = ({ style }) => {
   return (
     <footer className={`footer-section ${style}`}>
       <div className="container">
@@ -68,7 +68,7 @@ const Footer = ({style}) => {
                     </svg>
                     <h5>More Inquiry</h5>
                   </div>
-                  <a href="tel:+94743801833">+94 74 380 1833</a>
+                  <a href="tel:+94743801833">+94 762 205 763</a>
                 </div>
                 <div className="single-contact mb-35">
                   <div className="widget-title">
