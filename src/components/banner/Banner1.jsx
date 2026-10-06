@@ -5,14 +5,14 @@ import Link from "next/link";
 const Banner1 = () => {
   return (
     <>
-      <div className="home1-banner-area" style={{ padding: "20px 5%" }}>
+      <div className="home1-banner-area" style={{ padding: "20px 2%" }}>
         <div className="container-fluid">
           <div
             className="home1-banner-wrapper"
             style={{
               backgroundImage:
-                "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(/images/homepage-cover-photo.png)",
-              borderRadius: "30px",
+                "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(/images/elephant-hero.png)",
+              borderRadius: "20px",
               minHeight: "80vh",
               display: "flex",
               alignItems: "center",

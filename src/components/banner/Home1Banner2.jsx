@@ -1,10 +1,69 @@
 import Link from "next/link";
 import React from "react";
+import toursData from "@/data/tours.json";
+import DealsReveal from "./DealsReveal";
+import "./Home1Banner2.css";
+
+// Each card shows one tour from the Offers page (src/app/offers/page.js) and
+// links to the same /package/[id] details page as that tour's offer card.
+const HOME_DEALS = {
+  specialOffer: "tour-001", // Special Offers
+  coupleTour: "tour-013", // Special Tour Packages (max 2 people)
+  familyTour: "tour-012", // Family Tour Packages
+  seasonalTour: "tour-005", // Seasonal Tour Packages
+};
+
+const getDeal = (id) => {
+  const tour = toursData.find((t) => t.id === id);
+  if (!tour) return null;
+  return {
+    href: `/package/${tour.id}`,
+    title: tour.title,
+    image: tour.image,
+    price: tour.details?.price_from || tour.price || "",
+    days: parseInt(tour.details?.duration || tour.days, 10) || "",
+  };
+};
+
+// Tour photos come in assorted sizes, so pin each one to the box of the
+// template artwork it replaces. That keeps the section layout unchanged.
+const dealImageStyle = (aspectRatio) => ({
+  width: "100%",
+  aspectRatio,
+  objectFit: "cover",
+});
+
+// Makes the whole card clickable. It sits above the card's ::before/::after
+// overlays but below `.banner2-content-wrap` (also z-index 1, later in the
+// DOM), so the card's own links and buttons keep working.
+const cardLinkStyle = {
+  position: "absolute",
+  inset: 0,
+  zIndex: 1,
+  borderRadius: 5,
+};
+
+// Staggers the scroll-in of each card (see Home1Banner2.css).
+const revealDelay = (ms) => ({ "--hd-delay": `${ms}ms` });
+
+// The Family Tour card's button, shared by every card in this section.
+const BookNowButton = ({ href }) => (
+  <Link href={href} className="primary-btn1">
+    Book Now
+  </Link>
+);
 
 const Home1Banner2 = () => {
+  const specialOffer = getDeal(HOME_DEALS.specialOffer);
+  const coupleTour = getDeal(HOME_DEALS.coupleTour);
+  const familyTour = getDeal(HOME_DEALS.familyTour);
+  const seasonalTour = getDeal(HOME_DEALS.seasonalTour);
+
+  if (!specialOffer || !coupleTour || !familyTour || !seasonalTour) return null;
+
   return (
     <>
-      <div className="banner2-section mb-120">
+      <div className="banner2-section home-deals mb-120">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -40,53 +99,84 @@ const Home1Banner2 = () => {
               </div>
             </div>
           </div>
-          <div className="row g-lg-4 gy-5">
+          <DealsReveal className="row g-lg-4 gy-5">
             <div className="col-lg-3">
               <div className="banner2-card">
-                <img src="/assets/img/home1/banner2-card-img1.png" alt="" />
+                <img
+                  src={specialOffer.image}
+                  alt={specialOffer.title}
+                  style={dealImageStyle("312 / 536")}
+                />
+                <Link
+                  href={specialOffer.href}
+                  aria-label={specialOffer.title}
+                  style={cardLinkStyle}
+                />
                 <div className="banner2-content-wrap">
                   <div className="banner2-content">
-                    <span>Savings worldwide</span>
-                    <h3>20% Off</h3>
-                    <Link href="/package">Discover Great Deal</Link>
+                    <span>Special Offer</span>
+                    <h3>{specialOffer.price}</h3>
                   </div>
+                  <BookNowButton href={specialOffer.href} />
                 </div>
               </div>
             </div>
             <div className="col-lg-5">
               <div className="row">
                 <div className="col-lg-12">
-                  <div className="banner2-card two mb-30">
-                    <img src="/assets/img/home1/banner2-card-img3.png" alt="" />
+                  <div
+                    className="banner2-card two mb-30"
+                    style={revealDelay(120)}
+                  >
+                    <img
+                      src={coupleTour.image}
+                      alt={coupleTour.title}
+                      style={dealImageStyle("536 / 247")}
+                    />
+                    <Link
+                      href={coupleTour.href}
+                      aria-label={coupleTour.title}
+                      style={cardLinkStyle}
+                    />
                     <div className="banner2-content-wrap">
-                      <div className="banner2-content">
-                        <span>Couple Tour</span>
-                        <Link href="/package">4 Days In Switzerland</Link>
+                      <div>
+                        <div className="banner2-content">
+                          <span>Couple Tour</span>
+                          <Link href={coupleTour.href}>{coupleTour.title}</Link>
+                        </div>
+                        <BookNowButton href={coupleTour.href} />
                       </div>
                       <div className="offer-batch">
                         <span>
-                          <strong>50%</strong> <br />
-                          Off
+                          <strong>{coupleTour.days}</strong> <br />
+                          Days
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-12">
-                  <div className="banner2-card three">
-                    <img src="/assets/img/home1/banner2-card-img4.png" alt="" />
+                  <div className="banner2-card three" style={revealDelay(240)}>
+                    <img
+                      src={familyTour.image}
+                      alt={familyTour.title}
+                      style={dealImageStyle("536 / 248")}
+                    />
+                    <Link
+                      href={familyTour.href}
+                      aria-label={familyTour.title}
+                      style={cardLinkStyle}
+                    />
                     <div className="banner2-content-wrap d-flex align-items-center">
                       <div className="w-100">
                         <div className="banner2-content">
-                          <span>Honeymoon Tour</span>
+                          <span>Family Tour</span>
                           <h5>
-                            Enjoy <span>40%</span> Off
+                            From <span>{familyTour.price}</span>
                           </h5>
-                          <p>2 Country &amp; 15 Location</p>
+                          <p>{familyTour.title}</p>
                         </div>
-                        <Link href="/package" className="primary-btn1">
-                          Book Now
-                        </Link>
+                        <BookNowButton href={familyTour.href} />
                       </div>
                     </div>
                   </div>
@@ -94,21 +184,28 @@ const Home1Banner2 = () => {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="banner2-card four">
-                <img src="/assets/img/home1/banner2-card-img2.png" alt="" />
+              <div className="banner2-card four" style={revealDelay(360)}>
+                <img
+                  src={seasonalTour.image}
+                  alt={seasonalTour.title}
+                  style={dealImageStyle("424 / 531")}
+                />
+                <Link
+                  href={seasonalTour.href}
+                  aria-label={seasonalTour.title}
+                  style={cardLinkStyle}
+                />
                 <div className="banner2-content-wrap">
                   <div className="banner2-content">
-                    <span>Savings worldwide</span>
-                    <h3>50% Off</h3>
-                    <p>For Your First Book</p>
+                    <span>Seasonal Tour</span>
+                    <h3>{seasonalTour.price}</h3>
+                    <p>{seasonalTour.title}</p>
                   </div>
-                  <Link href="/package" className="primary-btn1">
-                    Book Now
-                  </Link>
+                  <BookNowButton href={seasonalTour.href} />
                 </div>
               </div>
             </div>
-          </div>
+          </DealsReveal>
         </div>
       </div>
     </>
