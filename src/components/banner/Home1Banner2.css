@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Home "Phenomenal Deals Offered" section.
+
+   Every selector is scoped under `.home-deals`, which only Home1Banner2 sets,
+   so the template's other `.banner2-*` sections are untouched.
+   ========================================================================== */
+
+.home-deals {
+  --hd-bolt-yellow: #ffd60a;
+  --hd-ease: cubic-bezier(0.22, 0.8, 0.3, 1);
+}
+
+/* ── Card motion ──────────────────────────────────────────────────────── */
+
+/* Reveal uses `translate` and hover uses `transform`, so the two never
+   overwrite each other on the same element. */
+.home-deals .banner2-card {
+  overflow: hidden;
+  opacity: 0;
+  translate: 0 32px;
+  transition: opacity 0.8s var(--hd-ease), translate 0.8s var(--hd-ease),
+    transform 0.5s var(--hd-ease), box-shadow 0.5s var(--hd-ease);
+  transition-delay: var(--hd-delay, 0ms), var(--hd-delay, 0ms), 0ms, 0ms;
+}
+
+.home-deals .banner2-card.is-visible {
+  opacity: 1;
+  translate: none;
+}
+
+.home-deals .banner2-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 12, 8, 0.18);
+}
+
+.home-deals .banner2-card > img {
+  transition: transform 0.9s var(--hd-ease);
+}
+
+.home-deals .banner2-card:hover > img {
+  transform: scale(1.06);
+}
+
+/* ── Text readability ─────────────────────────────────────────────────── */
+
+/* A slightly deeper photo tint (template: 0.2) behind the white text. */
+.home-deals .banner2-card::before {
+  background: rgba(16, 12, 8, 0.32);
+}
+
+.home-deals .banner2-card .banner2-content-wrap .banner2-content,
+.home-deals .banner2-card .banner2-content-wrap .offer-batch {
+  text-shadow: 0 1px 3px rgba(16, 12, 8, 0.6), 0 2px 14px rgba(16, 12, 8, 0.35);
+}
+
+.home-deals .banner2-card .banner2-content-wrap .banner2-content > span,
+.home-deals .banner2-card .banner2-content-wrap .banner2-content > a,
+.home-deals .banner2-card .banner2-content-wrap .banner2-content p,
+.home-deals .banner2-card .banner2-content-wrap .banner2-content h5,
+.home-deals .banner2-card .banner2-content-wrap .offer-batch span {
+  font-weight: 700;
+}
+
+/* The price on the 4th card. */
+.home-deals .banner2-card.four .banner2-content-wrap .banner2-content h3 {
+  color: var(--hd-bolt-yellow);
+}
+
+/* ── Book Now ─────────────────────────────────────────────────────────── */
+
+/* Every card uses the Family Tour card's button (template `.three` rules),
+   so it reads the same and stays visible on every photo. */
+.home-deals .banner2-card .banner2-content-wrap a.primary-btn1 {
+  background-color: var(--primary-color2);
+  color: var(--white-color);
+  padding: 13px 25px;
+  font-size: 15px;
+  text-shadow: none;
+}
+
+.home-deals .banner2-card .banner2-content-wrap a.primary-btn1::after {
+  background-color: var(--title-color);
+}
+
+.home-deals .banner2-card .banner2-content-wrap a.primary-btn1:hover {
+  color: var(--white-color);
+}
+
+/* Spacing for the buttons added under the 1st and 2nd cards' text. */
+.home-deals .banner2-card:not(.three):not(.four) .banner2-content-wrap a.primary-btn1 {
+  margin-top: 12px;
+}
+
+/* ── Reduced motion ───────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-deals .banner2-card,
+  .home-deals .banner2-card > img {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+
+  .home-deals .banner2-card:hover,
+  .home-deals .banner2-card:hover > img {
+    transform: none;
+  }
+}
