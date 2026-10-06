@@ -2594,7 +2594,7 @@ header.style-1 .main-menu ul>li a {
   padding: 25px 15px;
   position: relative;
   font-family: var(--font-rubik);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   transition: all 0.5s ease-out 0s;
   position: relative;
@@ -9656,6 +9656,13 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   stroke-dashoffset: 0;
 }
 
+.verticle-tab-section .verticle-tab-wrapper .verticle-tab-content-wrap .verticle-tab-img img {
+  width: 246px;
+  height: 180px;
+  max-width: none;
+  object-fit: cover;
+}
+
 @media (max-width: 767px) {
   .verticle-tab-section .verticle-tab-wrapper .verticle-tab-content-wrap .verticle-tab-img {
     display: none;
@@ -14674,7 +14681,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 }
 
 .home2-about-section .about-img-wrap .about-img {
-  -webkit-mask-image: url(../img/home2/home2-about-img-bg-vector.png);
+  -webkit-mask-image: url(/assets/img/home2/home2-about-img-bg-vector.png);
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;

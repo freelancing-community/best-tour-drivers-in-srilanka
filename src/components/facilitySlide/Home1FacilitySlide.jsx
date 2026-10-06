@@ -68,12 +68,9 @@ const Home1FacilitySlide = () => {
                           <h2>Finest Safety Systems</h2>
                         </div>
                         <p>
-                          Curabitur convallis enim at orci ullamcorper sagittis.
-                          Morbi porand gon nullalacu scelerisque in aliquam
-                          vitae, aliquam ut lectus. Nam utte mink Phasellus
-                          magna, efficitur finibus dictum auctor, volutpat gonet
-                          torrend accumsan purusDon luctus nunc non dapibus
-                          volutpat.
+                         Discover the timeless beauty of Sri Lanka, where golden beaches, misty mountains, ancient cities, and vibrant wildlife come together in one unforgettable island. 
+                         Wander through lush tea plantations, explore centuries-old temples, experience thrilling safaris, and enjoy the warmth of authentic Sri Lankan hospitality. 
+                         From peaceful escapes to exciting adventures, every journey reveals a new side of this tropical paradise.
                         </p>
                         <ul>
                           <li>
@@ -284,7 +281,7 @@ const Home1FacilitySlide = () => {
             </div>
             <div className="col-lg-6">
               <div className="franctional-slider-right-img">
-                <img src="/assets/img/home1/facility-img.png" alt="" />
+                <img src="/assets/img/home1/facility2.png" alt="" />
                 <div className="logo">
                   <img
                     src="/assets/img/home1/icon/tripadvisor-logo2.svg "

@@ -341,10 +341,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/zip-landing-01.jpg" alt="" />
+                        <img src="/assets/img/home1/zip1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/zip-landing-02.jpg" alt="" />
+                        <img src="/assets/img/home1/zip2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -460,10 +460,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/bungee-jump-01.jpg" alt="" />
+                        <img src="/assets/img/home1/bungee1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/bungee-jump-02.jpg" alt="" />
+                        <img src="/assets/img/home1/bungee2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -583,10 +583,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/rafting-01.jpg" alt="" />
+                        <img src="/assets/img/home1/rafting1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/rafting-02.jpg" alt="" />
+                        <img src="/assets/img/home1/rafting2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -600,13 +600,13 @@ const Home1Activities = () => {
                   <div className="verticle-tab-content-wrap">
                     <div className="verticle-tab-content">
                       <div className="eg-tag2">
-                        <span>Ski touring</span>
+                        <span>Jet Ski touring</span>
                       </div>
                       <h2>
                         Powder Quest: Exploring Snow-Covered Landscapes on Skis
                       </h2>
                       <p>
-                        Ski tour through pristine snowscapes, ascend peaks, and
+                        Jet Ski tour through pristine sea, ascend peaks, and
                         savor thrilling descents, immersing in nature's beauty
                         on an exhilarating adventure.
                       </p>
@@ -708,10 +708,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/ski-touring-01.jpg" alt="" />
+                        <img src="/assets/img/home1/jet1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/ski-touring-02.jpg" alt="" />
+                        <img src="/assets/img/home1/jet2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -832,10 +832,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/paragliding-01.jpg" alt="" />
+                        <img src="/assets/img/home1/para1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/paragliding-02.jpg" alt="" />
+                        <img src="/assets/img/home1/para2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -957,10 +957,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/surfing-01.jpg" alt="" />
+                        <img src="/assets/img/home1/surfing1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/surfing-02.jpg" alt="" />
+                        <img src="/assets/img/home1/surfing2.png" alt="" />
                       </div>
                     </div>
                   </div>
