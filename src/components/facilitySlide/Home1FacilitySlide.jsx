@@ -175,12 +175,9 @@ const Home1FacilitySlide = () => {
                           <h2>Our Premises Services</h2>
                         </div>
                         <p>
-                          Curabitur convallis enim at orci ullamcorper sagittis.
-                          Morbi porand gon nullalacu scelerisque in aliquam
-                          vitae, aliquam ut lectus. Nam utte mink Phasellus
-                          magna, efficitur finibus dictum auctor, volutpat gonet
-                          torrend accumsan purusDon luctus nunc non dapibus
-                          volutpat.
+                        Discover the timeless beauty of Sri Lanka, where golden beaches, misty mountains, ancient cities, and vibrant wildlife come together in one unforgettable island. 
+                         Wander through lush tea plantations, explore centuries-old temples, experience thrilling safaris, and enjoy the warmth of authentic Sri Lankan hospitality. 
+                         From peaceful escapes to exciting adventures, every journey reveals a new side of this tropical paradise.
                         </p>
                         <ul>
                           <li>
