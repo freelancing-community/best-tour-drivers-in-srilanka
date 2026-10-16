@@ -52,6 +52,8 @@ const contactCards = [
   },
 ];
 
+const PLACEHOLDER_IMG = "/guide-images/guide-placeholder.jpg";
+
 const agents = [
   {
     country: "Sri Lanka",
@@ -71,11 +73,43 @@ const agents = [
   },
   {
     country: "Sri Lanka",
-    name: "Nilaka",
+    name: "Nilanka",
     address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
     phone: "+94 76 220 5763",
     wa: "94762205763",
     img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156498/btd/guides/nilaka-01.jpg",
+  },
+  {
+    country: "Sri Lanka",
+    name: "Dinesh",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    country: "Sri Lanka",
+    name: "Kumara",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    country: "Sri Lanka",
+    name: "Podi",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    country: "Sri Lanka",
+    name: "Udaya",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: PLACEHOLDER_IMG,
   },
 ];
 

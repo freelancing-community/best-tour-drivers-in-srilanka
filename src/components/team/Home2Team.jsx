@@ -14,6 +14,8 @@ SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 const CARD_BG =
   "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156793/btd/assets/home2/teams-card-bg.png";
 
+const PLACEHOLDER_IMG = "/guide-images/guide-placeholder.jpg";
+
 const guides = [
   {
     name: "Mahesh",
@@ -26,9 +28,29 @@ const guides = [
     img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156497/btd/guides/Thilina-02.jpg",
   },
   {
-    name: "Nilaka",
+    name: "Nilanka",
     role: "Tour Guide",
     img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156498/btd/guides/nilaka-01.jpg",
+  },
+  {
+    name: "Dinesh",
+    role: "Tour Guide",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    name: "Kumara",
+    role: "Tour Guide",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    name: "Podi",
+    role: "Tour Guide",
+    img: PLACEHOLDER_IMG,
+  },
+  {
+    name: "Udaya",
+    role: "Tour Guide",
+    img: PLACEHOLDER_IMG,
   },
 ];
 
