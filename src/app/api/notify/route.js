@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import toursData from "@/data/tours.json";
 import { sendTemplateEmail } from "@/lib/brevo";
+import {
+  isWhatsAppBookingConfigured,
+  sendBookingWhatsAppAlert,
+} from "@/lib/whatsapp";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -24,7 +28,18 @@ function isPlaceholder(value) {
 
 function missingConfig(type) {
   const required = ["BREVO_API_KEY", "OWNER_EMAIL", TEMPLATE_ENV_BY_TYPE[type]];
-  return required.filter((key) => isPlaceholder(process.env[key]));
+  const missing = required.filter((key) => isPlaceholder(process.env[key]));
+
+  if (type === "booking" && !isWhatsAppBookingConfigured()) {
+    missing.push(
+      "WHATSAPP_ACCESS_TOKEN",
+      "WHATSAPP_PHONE_NUMBER_ID",
+      "WHATSAPP_OWNER_NUMBER",
+      "WHATSAPP_BOOKING_TEMPLATE_NAME"
+    );
+  }
+
+  return [...new Set(missing)];
 }
 
 function badRequest(message) {
@@ -253,16 +268,32 @@ export async function POST(request) {
       params,
     });
 
+    if (type === "booking") {
+      await sendBookingWhatsAppAlert({
+        guestName: params.guest_name,
+        guestPhone: params.guest_phone,
+        guestEmail: params.guest_email,
+        tourTitle: params.tour_title,
+        tourDate: params.tour_date,
+        tourTime: params.tour_time,
+        ticketCount: params.ticket_count,
+        priceFrom: params.price_from,
+      });
+    }
+
     return NextResponse.json({
       success: true,
-      message: SUCCESS_MESSAGE_BY_TYPE[type],
+      message:
+        type === "booking"
+          ? "Booking request sent by email and WhatsApp"
+          : SUCCESS_MESSAGE_BY_TYPE[type],
     });
   } catch (error) {
     console.error("Notify API error:", error);
     return NextResponse.json(
       {
         success: false,
-        message: error.message || "Failed to send notification email",
+        message: error.message || "Failed to send notification",
       },
       { status: 502 }
     );
