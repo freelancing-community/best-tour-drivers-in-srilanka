@@ -8474,12 +8474,13 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   overflow: hidden;
   display: block;
   border-radius: 10px;
+  height: 260px; /* fixed frame so next/image / CldImage can't stretch by aspect ratio */
 }
 
 .package-card .package-card-img-wrap .card-img img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
   border-radius: 10px;
   transition: all 0.5s ease-out;
 }
@@ -15814,21 +15815,27 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   left: 50%;
   transform: translateX(-50%);
   transition: 0.5s ease-in-out;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 @media (max-width: 576px) {
   .teams-card .teams-img {
     top: 60px;
+    width: 250px;
+    height: 250px;
   }
 }
 
 .teams-card .teams-img img {
   min-width: 200px;
-  height: 200px;
-  width: 100%;
+  height: 200px !important;
+  width: 100% !important;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+  object-fit: cover !important;
   transition: 0.5s;
   transition: 0.5s ease-in-out;
 }
