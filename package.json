@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:images": "node scripts/migrate-images-to-cloudinary.mjs",
+    "migrate:images:dry": "node scripts/migrate-images-to-cloudinary.mjs --dry-run",
+    "migrate:images:rewrite": "node scripts/migrate-images-to-cloudinary.mjs --rewrite",
+    "migrate:images:all": "node scripts/migrate-images-to-cloudinary.mjs --all",
+    "cleanup:images": "node scripts/cleanup-unused-local-images.mjs",
+    "cleanup:images:delete": "node scripts/cleanup-unused-local-images.mjs --delete"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
@@ -22,6 +28,8 @@
     "yet-another-react-lightbox": "^2.6.2"
   },
   "devDependencies": {
+    "cloudinary": "^2.11.0",
+    "dotenv": "^18.0.8",
     "eslint": "^8",
     "eslint-config-next": "14.0.4"
   }

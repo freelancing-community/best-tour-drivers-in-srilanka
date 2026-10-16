@@ -1,38 +1,62 @@
-"use client";
-import "../../public/assets/css/bootstrap-icons.css";
-import "../../public/assets/css/all.min.css";
-import "../../public/assets/css/boxicons.min.css";
-import "../../public/assets/css/fontawesome.min.css";
-import "../../public/assets/css/swiper-bundle.min.css";
-import "../../public/assets/css/nice-select.css";
-import "react-modal-video/css/modal-video.css";
-import "../../public/assets/css/slick-theme.css";
-import "../../public/assets/css/slick.css";
-import "../../public/assets/css/bootstrap-datetimepicker.min.css";
-import "react-datepicker/dist/react-datepicker.css";
-import "../../public/assets/css/bootstrap.min.css";
-import "yet-another-react-lightbox/styles.css";
-import "../../public/assets/css/style.css";
-import "../../public/assets/css/dashboard.css";
-import { useEffect } from "react";
+import AppProviders from "@/components/common/AppProviders";
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://besttourdriversinsrilanka.com";
+
+export const metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Best Tour Drivers in Sri Lanka | Private Drivers & Custom Tours",
+    template: "%s | Best Tour Drivers in Sri Lanka",
+  },
+  description:
+    "Reliable private drivers, custom tour packages, and unforgettable travel experiences across Sri Lanka.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_LK",
+    url: siteUrl,
+    siteName: "Best Tour Drivers in Sri Lanka",
+    title: "Best Tour Drivers in Sri Lanka",
+    description:
+      "Private drivers and custom Sri Lanka tours with local expert guides.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Best Tour Drivers in Sri Lanka",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Tour Drivers in Sri Lanka",
+    description:
+      "Private drivers and custom Sri Lanka tours with local expert guides.",
+    images: ["https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"],
+  },
+  icons: {
+    icon: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
+    shortcut: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
+    apple: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
+  },
+};
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/images/logo.png" type="image/png" />
-        <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
-      </head>
-      <body>{children}</body>
+      <body>
+        <AppProviders>
+          <JsonLd data={organizationJsonLd()} />
+          <JsonLd data={websiteJsonLd()} />
+          {children}
+        </AppProviders>
+      </body>
     </html>
   );
 }

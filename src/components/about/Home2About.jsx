@@ -138,7 +138,7 @@ const Home2About = () => {
               <div className="about-img-wrap">
                 <div className="about-img">
                   <img
-                    src="/assets/img/home2/home2-about-image1.png"
+                    src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156963/btd/assets/home2/home2-about-image1.png"
                     alt=""
                     className="about-img"
                   />

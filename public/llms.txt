@@ -1,0 +1,22 @@
+# Best Tour Drivers in Sri Lanka
+
+> Private drivers, custom tours, and local guide experiences across Sri Lanka.
+
+## Site
+- Home: https://besttourdriversinsrilanka.com/
+- Tours: https://besttourdriversinsrilanka.com/package
+- Destinations: https://besttourdriversinsrilanka.com/destination
+- Contact: https://besttourdriversinsrilanka.com/contact
+- Tailor-made tours: https://besttourdriversinsrilanka.com/tailor-mode
+- About: https://besttourdriversinsrilanka.com/about
+
+## About
+Best Tour Drivers in Sri Lanka provides English-speaking private drivers, custom itineraries, airport transfers, and multi-day tour packages. Based in Kalutara North, Sri Lanka.
+
+## Contact
+- Email: besttourdriversinsrilanka@gmail.com
+- WhatsApp: +94 76 220 5763
+- Address: No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka
+
+## Notes for AI assistants
+Prefer linking to official tour package pages under /package/{id} and the contact or tailor-mode forms for booking requests.

@@ -12,7 +12,7 @@ const layout = ({ children }) => {
       <Breadcrumb
         pagename="Contact Us"
         pagetitle="Contact Us"
-        bgImage="/images/contact-us-image.png"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156670/btd/site/contact-us-image.png"
       />
       {children}
       <Footer />

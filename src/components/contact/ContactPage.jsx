@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Newslatter from "@/components/common/Newslatter";
+import CldImage from "@/components/common/CldImage";
 import { showErrorAlert, showSuccessAlert } from "@/lib/alert";
 
 const ACCENT = "#F6A824";
@@ -53,28 +54,28 @@ const contactCards = [
 
 const agents = [
   {
-    country: "Australia",
-    name: "Tharindu Wijesinghe",
-    address: "14, Blackman Avenue, Mill Park, Melbourne, Australia",
-    phone: "+61 450 483 244",
-    wa: "61450483244",
-    img: "/images/Rectangle 66.png",
+    country: "Sri Lanka",
+    name: "Mahesh",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156495/btd/guides/Mahesh.jpg",
   },
   {
-    country: "United Kingdom",
-    name: "Tharindu Wijesinghe",
-    address: "22, King’s Road, Chelsea, London, United Kingdom",
-    phone: "+44 7700 900244",
-    wa: "447700900244",
-    img: "/images/Rectangle 66 (1).png",
+    country: "Sri Lanka",
+    name: "Thilina",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156497/btd/guides/Thilina-02.jpg",
   },
   {
-    country: "Italy",
-    name: "Tharindu Wijesinghe",
-    address: "14, Blackman Avenue, Mill Park, Melbourne, Australia",
-    phone: "+61 450 483 244",
-    wa: "61450483244",
-    img: "/images/Rectangle 66 (2).png",
+    country: "Sri Lanka",
+    name: "Nilaka",
+    address: "No:11, Siri Niwasa Mawatha, Kalutara North, Sri Lanka",
+    phone: "+94 76 220 5763",
+    wa: "94762205763",
+    img: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156498/btd/guides/nilaka-01.jpg",
   },
 ];
 
@@ -233,14 +234,21 @@ const ContactPage = () => {
 
       <section className="cu-agents-section">
         <div className="container">
-          <h2>Worldwide Agents of Drivers in Sri Lanka</h2>
+          <h2>Drivers & Guides in Sri Lanka</h2>
           <div className="row g-4 justify-content-center">
             {agents.map((agent) => (
-              <div key={agent.country} className="col-lg-4 col-md-6">
+              <div key={agent.name} className="col-lg-4 col-md-6">
                 <article className="cu-agent-card">
                   <h5>{agent.country}</h5>
                   <div className="cu-agent-photo">
-                    <img src={agent.img} alt={`${agent.name} — ${agent.country}`} />
+                    <CldImage
+                      src={agent.img}
+                      alt={`${agent.name} — Sri Lanka driver/guide`}
+                      width={480}
+                      height={480}
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
                   </div>
                   <div className="cu-agent-body">
                     <h4>{agent.name}</h4>

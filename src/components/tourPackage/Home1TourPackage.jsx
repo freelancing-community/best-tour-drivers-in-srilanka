@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import toursData from "@/data/tours.json";
+import CldImage from "@/components/common/CldImage";
 
 const WaveIcon = ({ flip = false }) => (
   <svg
@@ -52,12 +53,12 @@ const Home1TourPackage = () => {
     <>
       <div className="package-card-section pt-120 mb-120">
         <img
-          src="/assets/img/home1/section-vector1.png"
+          src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156944/btd/assets/home1/section-vector1.png"
           alt=""
           className="section-vector1"
         />
         <img
-          src="/assets/img/home1/section-vector3.png"
+          src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157354/btd/assets/home1/section-vector3.png"
           alt=""
           className="section-vector3"
         />
@@ -92,8 +93,13 @@ const Home1TourPackage = () => {
                         href={`/package/${tour.id}`}
                         className="card-img"
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={tour.image} alt={tour.title} />
+                        <CldImage
+                          src={tour.image}
+                          alt={tour.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          style={{ objectFit: "cover" }}
+                        />
                       </Link>
                       <div className="batch">
                         <span className="date">{duration}</span>

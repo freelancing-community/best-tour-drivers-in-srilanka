@@ -3,6 +3,7 @@ import Link from "next/link";
 import navData from "../../data/nav.json";
 import destinaiton_sidebar_data from "../../data/destination-_idebar.json";
 import { useEffect, useMemo, useReducer, useRef } from "react";
+import CldImage from "@/components/common/CldImage";
 import LoginModal from "../common/LoginModal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -150,19 +151,40 @@ const Header = () => {
       >
         <div className="header-logo d-lg-none d-flex">
           <Link href="/">
-            <img alt="image" className="img-fluid" src="/images/logo.png" style={{ height: "50px", width: "auto" }} />
+            <CldImage
+              alt="Best Tour Drivers in Sri Lanka"
+              className="img-fluid"
+              src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"
+              width={160}
+              height={50}
+              priority
+              style={{ height: "50px", width: "auto" }}
+            />
           </Link>
         </div>
         <div className="company-logo d-lg-flex d-none">
           <Link href="/">
-            <img src="/images/logo.png" alt="" style={{ height: "60px", width: "auto" }} />
+            <CldImage
+              src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"
+              alt="Best Tour Drivers in Sri Lanka"
+              width={200}
+              height={60}
+              priority
+              style={{ height: "60px", width: "auto" }}
+            />
           </Link>
         </div>
         <div className={`main-menu ${state.isSidebarOpen ? "show-menu" : ""}`}>
           <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
             <div className="mobile-logo-wrap">
               <Link href="/">
-                <img alt="image" src="/images/logo.png" />
+                <CldImage
+                  alt="Best Tour Drivers in Sri Lanka"
+                  src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"
+                  width={160}
+                  height={50}
+                  style={{ height: "50px", width: "auto" }}
+                />
               </Link>
             </div>
             <div className="menu-close-btn" onClick={toggleSidebar}>
@@ -275,7 +297,13 @@ const Header = () => {
         <div className="sidebar-logo-area d-flex justify-content-between align-items-center">
           <div className="sidebar-logo-wrap">
             <Link href="/">
-              <img alt="Best Tour Drivers" src="/images/logo.png" />
+              <CldImage
+                alt="Best Tour Drivers"
+                src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"
+                width={160}
+                height={50}
+                style={{ height: "50px", width: "auto" }}
+              />
             </Link>
           </div>
           <div className="right-sidebar-close-btn" onClick={toggleRightSidebar}>

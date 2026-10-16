@@ -36,12 +36,12 @@ const Newslatter = () => {
                   </div>
                 </form>
                 <img
-                  src="/assets/img/home1/banner3-vector1.png"
+                  src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157329/btd/assets/home1/banner3-vector1.png"
                   alt=""
                   className="vector1"
                 />
                 <img
-                  src="/assets/img/home1/banner3-vector2.png"
+                  src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157330/btd/assets/home1/banner3-vector2.png"
                   alt=""
                   className="vector2"
                 />

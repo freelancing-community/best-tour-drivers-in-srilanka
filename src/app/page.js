@@ -21,8 +21,14 @@ export const metadata = {
   title: "Best Tour Drivers in Sri Lanka | Private Drivers & Custom Tours",
   description:
     "Best Tour Drivers in Sri Lanka offers reliable private drivers, custom tour packages, and unforgettable travel experiences across Sri Lanka.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Best Tour Drivers in Sri Lanka",
+    description:
+      "Private drivers and custom Sri Lanka tours with local expert guides.",
+  },
   icons: {
-    icon: "/images/logo.png",
+    icon: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
   },
 };
 export default function Home() {

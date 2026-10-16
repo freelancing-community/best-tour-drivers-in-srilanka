@@ -14,7 +14,7 @@ const LoginModal = () => {
           <div className="modal-content">
             <div className="modal-clode-btn" data-bs-dismiss="modal" />
             <div className="modal-header">
-              <img src="/assets/img/home1/login-modal-header-img.jpg" alt="" />
+              <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157371/btd/assets/home1/login-modal-header-img.png" alt="" />
             </div>
             <div className="modal-body">
               <div className="login-registration-form">

@@ -12,7 +12,7 @@ const Footer = ({ style }) => {
                 <div className="footer-logo">
                   <Link href="/">
                     <img
-                      src="/images/logo.png"
+                      src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png"
                       alt="Best Tour Drivers in Sri Lanka"
                       style={{ height: "88px", width: "auto" }}
                     />

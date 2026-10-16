@@ -1,5 +1,6 @@
 "use client";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import CldImage from "@/components/common/CldImage";
 import Link from "next/link";
 import React, { useState } from "react";
 import destinationsData from "@/data/destinations.json";
@@ -16,8 +17,14 @@ const COL_PATTERNS = [
 const DestinationCard = ({ dest, colClass }) => (
   <div className={colClass}>
     <div className="destination-card">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={dest.image} alt={dest.title} />
+      <CldImage
+        src={dest.image}
+        alt={dest.title}
+        width={900}
+        height={700}
+        sizes="(max-width: 768px) 100vw, 40vw"
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
       <div className="overlay" />
       <div className="card-title">
         <h4>{dest.title}</h4>
@@ -73,7 +80,7 @@ const Page = () => {
       <Breadcrumb
         pagename="Destinations"
         pagetitle="Destinations"
-        bgImage="/images/breadcrumb/daniel-klein-Qx8_d5dGhrs-unsplash.jpg"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156735/btd/site/breadcrumb/daniel-klein-Qx8_d5dGhrs-unsplash.jpg"
       />
       <div className="destination-gallery-section pt-120 mb-120">
         <div className="container">

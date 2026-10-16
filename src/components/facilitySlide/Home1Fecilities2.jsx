@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import CldImage from "@/components/common/CldImage";
 import toursData from "@/data/tours.json";
 
 const mayToSepTourIds = [
@@ -101,8 +102,13 @@ const Home1Fecilities2 = () => {
                         href={`/package/${tour.id}`}
                         className="card-img"
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={tour.image} alt={tour.title} />
+                        <CldImage
+                          src={tour.image}
+                          alt={tour.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          style={{ objectFit: "cover" }}
+                        />
                       </Link>
                       <div className="batch">
                         <span className="date">{duration}</span>
