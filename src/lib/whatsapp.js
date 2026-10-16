@@ -1,6 +1,9 @@
 /**
  * Sends a WhatsApp Cloud API template message to the owner.
  * Used for tour booking alerts only.
+ *
+ * Temporarily unused: /api/notify sends Brevo email only.
+ * Re-enable by uncommenting the WhatsApp calls in src/app/api/notify/route.js.
  */
 
 function isPlaceholder(value) {
