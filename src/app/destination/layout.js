@@ -4,11 +4,17 @@ import Header from "@/components/header/Header";
 import Topbar from "@/components/topbar/Topbar";
 import React from "react";
 export const metadata = {
-  title: "Destinations in Sri Lanka | Best Tour Drivers in Sri Lanka",
+  title: "Destinations in Sri Lanka",
   description:
     "Discover top travel destinations across Sri Lanka with private drivers from Best Tour Drivers in Sri Lanka.",
+  alternates: { canonical: "/destination" },
+  openGraph: {
+    title: "Destinations in Sri Lanka | Best Tour Drivers in Sri Lanka",
+    description:
+      "Discover top travel destinations across Sri Lanka with private drivers.",
+  },
   icons: {
-    icon: "/images/logo.png",
+    icon: "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156575/btd/site/logo.png",
   },
 };
 const layout = ({children}) => {
