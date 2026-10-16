@@ -278,7 +278,7 @@ const Home1FacilitySlide = () => {
             </div>
             <div className="col-lg-6">
               <div className="franctional-slider-right-img">
-                <img src="/assets/img/home1/facility2.png" alt="" />
+                <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157349/btd/assets/home1/facility2.png" alt="" />
                 <div className="logo">
                   <img
                     src="/assets/img/home1/icon/tripadvisor-logo2.svg "
@@ -289,8 +289,8 @@ const Home1FacilitySlide = () => {
             </div>
           </div>
           <div className="rating-wrapper">
-            <img src="/assets/img/home1/rating-img1.png" alt="" />
-            <img src="/assets/img/home1/rating-img2.png" alt="" />
+            <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157350/btd/assets/home1/rating-img1.png" alt="" />
+            <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157351/btd/assets/home1/rating-img2.png" alt="" />
           </div>
         </div>
       </div>

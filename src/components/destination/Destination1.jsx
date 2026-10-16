@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import destinationsData from "@/data/destinations.json";
+import CldImage from "@/components/common/CldImage";
 
 const colClasses = [
   "col-lg-3 col-sm-6",
@@ -17,7 +18,7 @@ const Destination1 = () => {
     <>
       <div className="home1-destination-section mb-120">
         <img
-          src="/assets/img/home1/section-vector2.png"
+          src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157330/btd/assets/home1/section-vector2.png"
           alt=""
           className="section-vector2"
         />
@@ -62,8 +63,14 @@ const Destination1 = () => {
               return (
                 <div className={colClass} key={dest.id}>
                   <div className="destination-card">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={dest.image} alt={dest.title} />
+                    <CldImage
+                      src={dest.image}
+                      alt={dest.title}
+                      width={900}
+                      height={700}
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
                     <div className="overlay" />
                     <div className="card-title">
                       <h4>{dest.title}</h4>

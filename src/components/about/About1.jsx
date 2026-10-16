@@ -10,7 +10,7 @@ const About1 = () => {
     <>
       <div className="home1-about-section mb-120">
         <img
-          src="/assets/img/home1/section-vector1.png"
+          src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156944/btd/assets/home1/section-vector1.png"
           alt=""
           className="section-vector1"
         />
@@ -127,7 +127,7 @@ const About1 = () => {
             </div>
             <div className="col-lg-5">
               <div className="about-img text-end">
-                <img src="/images/home-page-2.png" alt="Sri Lanka travel collage" className="img-fluid rounded" style={{ maxWidth: "100%", height: "auto" }} />
+                <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156953/btd/site/home-page-2.png" alt="Sri Lanka travel collage" className="img-fluid rounded" style={{ maxWidth: "100%", height: "auto" }} />
               </div>
             </div>
           </div>

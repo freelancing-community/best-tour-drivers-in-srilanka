@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import CldImage from "@/components/common/CldImage";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import destinationsData from "@/data/destinations.json";
@@ -44,7 +45,13 @@ const TourCard = ({ tour }) => {
         <div className="package-card-img-wrap">
           <Link href={`/package/${tour.id}`} className="card-img">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={tour.image} alt={tour.title} />
+            <CldImage
+              src={tour.image}
+              alt={tour.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ objectFit: "cover" }}
+            />
           </Link>
           <div className="batch">
             <span className="date">{duration}</span>
@@ -97,7 +104,7 @@ const DestinationDetailsPage = () => {
         <Breadcrumb
           pagename="Destination Not Found"
           pagetitle="Destination Details"
-          bgImage="/images/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
+          bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156701/btd/site/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
         />
         <div className="container pt-120 mb-120 text-center">
           <h2>Destination Not Found</h2>
@@ -125,7 +132,7 @@ const DestinationDetailsPage = () => {
       <Breadcrumb
         pagename={destination.title}
         pagetitle="Destination Details"
-        bgImage="/images/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156701/btd/site/breadcrumb/hendrik-cornelissen-svZvPZ54uBI-unsplash.jpg"
       />
       <div className="destination-details-wrap mb-120 pt-120">
         <div className="container">

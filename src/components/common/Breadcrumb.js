@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const Breadcrumb = ({ pagename, pagetitle, bgImage }) => {
-  const image = bgImage || "/images/contact-us-image.png";
+  const image = bgImage || "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156670/btd/site/contact-us-image.png";
   return (
     <div
       className="breadcrumb-section"

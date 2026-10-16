@@ -8,7 +8,7 @@ const Home1Activities = () => {
   return (
     <div className="verticle-tab-section pt-120 mb-120 activities-orange">
       <img
-        src="/assets/img/home1/section-vector1.png"
+        src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156944/btd/assets/home1/section-vector1.png"
         alt=""
         className="section-vector1"
       />
@@ -341,10 +341,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/zip1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157227/btd/assets/home1/zip1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/zip2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157235/btd/assets/home1/zip2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -460,10 +460,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/bungee1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157240/btd/assets/home1/bungee1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/bungee2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157242/btd/assets/home1/bungee2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -583,10 +583,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/rafting1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157251/btd/assets/home1/rafting1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/rafting2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157262/btd/assets/home1/rafting2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -708,10 +708,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/jet1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157272/btd/assets/home1/jet1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/jet2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157281/btd/assets/home1/jet2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -832,10 +832,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/para1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157292/btd/assets/home1/para1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/para2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157299/btd/assets/home1/para2.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -957,10 +957,10 @@ const Home1Activities = () => {
                     </div>
                     <div className="verticle-tab-img">
                       <div className="verticle-tab-img1 mb-25">
-                        <img src="/assets/img/home1/surfing1.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157311/btd/assets/home1/surfing1.png" alt="" />
                       </div>
                       <div className="verticle-tab-img2">
-                        <img src="/assets/img/home1/surfing2.png" alt="" />
+                        <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792157318/btd/assets/home1/surfing2.png" alt="" />
                       </div>
                     </div>
                   </div>

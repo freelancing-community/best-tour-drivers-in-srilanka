@@ -3,7 +3,7 @@
     "id": "tour-001",
     "title": "SPECIAL OFFER: 10 Days South West Culture and Coast Tour with Hotels",
     "link": "https://driversinsrilanka.com/tour/special-offer-10-days-south-west-culture-and-coast-tour-with-hotels/",
-    "image": "/images/Tours/IMG_0329.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156500/btd/tours/IMG_0329-JPG.jpg",
     "days": "10 days",
     "price": "$550.00",
     "details": {
@@ -15,9 +15,9 @@
       "tour_type": "Special Offers",
       "price_from": "$550.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/10-Days-Down-South-To-East-Coast-family.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/10-Days-Down-South-To-East-Coast-Explorer.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/10/14-days-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156535/btd/gallery/10-Days-Down-South-To-East-Coast-family_141ab743.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156536/btd/gallery/10-Days-Down-South-To-East-Coast-Explorer_db0bea10.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156538/btd/gallery/14-days-tour_7b40be75.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -318,7 +318,7 @@
     "id": "tour-002",
     "title": "14 Days Down South to East Coast Family Tour",
     "link": "https://driversinsrilanka.com/tour/14-days-down-south-to-east-coast-family-tour/",
-    "image": "/images/Tours/IMG_0330.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156501/btd/tours/IMG_0330-JPG.jpg",
     "days": "14 days",
     "price": "$1250.00",
     "details": {
@@ -330,9 +330,9 @@
       "tour_type": "Family Packages",
       "price_from": "$1250.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/14-Days-Down-South-To-East-Coast-Family-Tour.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/02/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-04-09-at-1.39.28-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156539/btd/gallery/14-Days-Down-South-To-East-Coast-Family-Tour_c0f40427.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156540/btd/gallery/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels_7174ef38.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156541/btd/gallery/WhatsApp-Image-2022-04-09-at-1-39-28-PM_851f96bd.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -611,7 +611,7 @@
     "id": "tour-003",
     "title": "10 Days Down South to East Coast Family Tour",
     "link": "https://driversinsrilanka.com/tour/10-days-down-south-to-east-coast-family-tour/",
-    "image": "/images/Tours/IMG_0331.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156502/btd/tours/IMG_0331-JPG.jpg",
     "days": "10 days",
     "price": "$1100.00",
     "details": {
@@ -623,8 +623,8 @@
       "tour_type": "Family Packages",
       "price_from": "$1100.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/10-Days-Down-South-To-East-Coast-family.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-04-at-6.53.24-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156535/btd/gallery/10-Days-Down-South-To-East-Coast-family_141ab743.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156542/btd/gallery/WhatsApp-Image-2022-09-04-at-6-53-24-PM_ccaaf6ec.jpg"
       ],
       "included": [
         "Fully Air-Conditioned Private KDH Van",
@@ -843,7 +843,7 @@
     "id": "tour-004",
     "title": "10 Days Down South to East Coast Explorer Full Package",
     "link": "https://driversinsrilanka.com/tour/10-days-down-south-to-east-coast-explorer-full-package/",
-    "image": "/images/Tours/IMG_0332.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156503/btd/tours/IMG_0332-JPG.jpg",
     "days": "10 days",
     "price": "$1147.50",
     "details": {
@@ -855,9 +855,9 @@
       "tour_type": "East Coast",
       "price_from": "$1147.50",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/Horton-Plains-Sri-Lanka-couple.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/02/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-29-at-7.41.49-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156543/btd/gallery/Horton-Plains-Sri-Lanka-couple_aa3b9fe1.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156540/btd/gallery/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels_7174ef38.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156544/btd/gallery/WhatsApp-Image-2022-08-29-at-7-41-49-PM_fb813c41.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -1112,7 +1112,7 @@
     "id": "tour-005",
     "title": "10 Days Down South to East Coast Explorer",
     "link": "https://driversinsrilanka.com/tour/10-days-down-south-to-east-coast-explorer/",
-    "image": "/images/Tours/IMG_0333.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156505/btd/tours/IMG_0333-JPG.jpg",
     "days": "10 days",
     "price": "$522.50",
     "details": {
@@ -1124,9 +1124,9 @@
       "tour_type": "East Coast",
       "price_from": "$522.50",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/10-Days-Down-South-To-East-Coast-Explorer.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/02/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-29-at-7.41.49-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156536/btd/gallery/10-Days-Down-South-To-East-Coast-Explorer_db0bea10.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156540/btd/gallery/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels_7174ef38.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156544/btd/gallery/WhatsApp-Image-2022-08-29-at-7-41-49-PM_fb813c41.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -1345,7 +1345,7 @@
     "id": "tour-006",
     "title": "14 Days Down South to East Coast Explorer Full Package",
     "link": "https://driversinsrilanka.com/tour/14-days-down-south-to-east-coast-explorer-full-package/",
-    "image": "/images/Tours/IMG_0334.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156506/btd/tours/IMG_0334-JPG.jpg",
     "days": "14 days",
     "price": "$1360.00",
     "details": {
@@ -1357,9 +1357,9 @@
       "tour_type": "East Coast",
       "price_from": "$1360.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/06/Horton-Plains-Sri-Lanka.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/02/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-29-at-7.41.49-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156545/btd/gallery/Horton-Plains-Sri-Lanka_97aa2a9d.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156540/btd/gallery/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels_7174ef38.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156544/btd/gallery/WhatsApp-Image-2022-08-29-at-7-41-49-PM_fb813c41.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -1690,7 +1690,7 @@
     "id": "tour-007",
     "title": "10 Days Down South to East Coast Explorer with Hotels",
     "link": "https://driversinsrilanka.com/tour/10-days-down-south-to-east-coast-explorer-with-hotels/",
-    "image": "/images/Tours/IMG_0335.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156507/btd/tours/IMG_0335-JPG.jpg",
     "days": "10 days",
     "price": "$705.00",
     "details": {
@@ -1702,8 +1702,8 @@
       "tour_type": "East Coast",
       "price_from": "$705.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/05/10-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-03-10-at-8.28.19-AM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156546/btd/gallery/10-Days-Down-South-To-East-Coast-Explorer-with-Hotels_a60ac5a4.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156547/btd/gallery/WhatsApp-Image-2023-03-10-at-8-28-19-AM_f749b9c0.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -1958,7 +1958,7 @@
     "id": "tour-008",
     "title": "14 Days Down South to East Coast Explorer with Hotels",
     "link": "https://driversinsrilanka.com/tour/14-days-down-south-to-east-coast-explorer-with-hotels/",
-    "image": "/images/Tours/IMG_0336.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156508/btd/tours/IMG_0336-JPG.jpg",
     "days": "14 days",
     "price": "$815.00",
     "details": {
@@ -1970,9 +1970,9 @@
       "tour_type": "East Coast",
       "price_from": "$815.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2023/02/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-29-at-7.41.49-PM.jpeg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/trincomalee.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156540/btd/gallery/14-Days-Down-South-To-East-Coast-Explorer-with-Hotels_7174ef38.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156544/btd/gallery/WhatsApp-Image-2022-08-29-at-7-41-49-PM_fb813c41.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156548/btd/gallery/trincomalee_edd6271d.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -2303,7 +2303,7 @@
     "id": "tour-009",
     "title": "14 Days South West Culture and Coast Tour Package",
     "link": "https://driversinsrilanka.com/tour/14-days-tour-package-with-driver/",
-    "image": "/images/Tours/IMG_0352.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156509/btd/tours/IMG_0352-JPG.jpg",
     "days": "14 days",
     "price": "$520.00",
     "details": {
@@ -2315,7 +2315,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$520.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/10/14-days-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156538/btd/gallery/14-days-tour_7b40be75.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -2608,7 +2608,7 @@
     "id": "tour-010",
     "title": "10 Days South West Culture and Coast Tour Package",
     "link": "https://driversinsrilanka.com/tour/10-days-tour-with-driver/",
-    "image": "/images/Tours/IMG_0338.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156510/btd/tours/IMG_0338-JPG.jpg",
     "days": "10 days",
     "price": "$420.00",
     "details": {
@@ -2620,7 +2620,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$420.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/10/10-days-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156549/btd/gallery/10-days-tour_cfa3ee30.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -2913,7 +2913,7 @@
     "id": "tour-011",
     "title": "14 Days Family Tour Package",
     "link": "https://driversinsrilanka.com/tour/14-days-family-tour-package/",
-    "image": "/images/Tours/IMG_0339.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156511/btd/tours/IMG_0339-JPG.jpg",
     "days": "14 days",
     "price": "$1200.00",
     "details": {
@@ -2925,7 +2925,7 @@
       "tour_type": "Family Packages",
       "price_from": "$1200.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-04-09-at-1.39.28-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156541/btd/gallery/WhatsApp-Image-2022-04-09-at-1-39-28-PM_851f96bd.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -3218,7 +3218,7 @@
     "id": "tour-012",
     "title": "10 Days Family Tour Package",
     "link": "https://driversinsrilanka.com/tour/10-days-family-tour-package/",
-    "image": "/images/Tours/IMG_0340.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156513/btd/tours/IMG_0340-JPG.jpg",
     "days": "10 days",
     "price": "$1000.00",
     "details": {
@@ -3230,7 +3230,7 @@
       "tour_type": "Family Packages",
       "price_from": "$1000.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-04-at-6.53.24-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156542/btd/gallery/WhatsApp-Image-2022-09-04-at-6-53-24-PM_ccaaf6ec.jpg"
       ],
       "included": [
         "Fully Air-Conditioned Private KDH Van",
@@ -3523,7 +3523,7 @@
     "id": "tour-013",
     "title": "5 Days Tour Package",
     "link": "https://driversinsrilanka.com/tour/5-days-tour-package/",
-    "image": "/images/Tours/IMG_0341.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156514/btd/tours/IMG_0341-JPG.jpg",
     "days": "5 days",
     "price": "$300.00",
     "details": {
@@ -3535,7 +3535,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$300.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/5-days-tour-package.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156550/btd/gallery/5-days-tour-package_f47c4a9f.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -3697,7 +3697,7 @@
     "id": "tour-014",
     "title": "Nature Lovers Special",
     "link": "https://driversinsrilanka.com/tour/nature-lovers-special/",
-    "image": "/images/Tours/IMG_0342.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156515/btd/tours/IMG_0342-JPG.jpg",
     "days": "12 days",
     "price": "$450.00",
     "details": {
@@ -3709,7 +3709,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$450.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/nature-lovers.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156550/btd/gallery/nature-lovers_79330548.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -3941,7 +3941,7 @@
     "id": "tour-015",
     "title": "14 Days Down South to East Coast Explorer",
     "link": "https://driversinsrilanka.com/tour/14-days-down-south-to-east-coast-explorer/",
-    "image": "/images/Tours/IMG_0343.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156516/btd/tours/IMG_0343-JPG.jpg",
     "days": "14 days",
     "price": "$545.00",
     "details": {
@@ -3953,7 +3953,7 @@
       "tour_type": "East Coast",
       "price_from": "$545.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-29-at-7.41.49-PM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156544/btd/gallery/WhatsApp-Image-2022-08-29-at-7-41-49-PM_fb813c41.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -4232,7 +4232,7 @@
     "id": "tour-016",
     "title": "14 Days South West Culture and Coast Tour Full Package",
     "link": "https://driversinsrilanka.com/tour/14-days-tour-full-package/",
-    "image": "/images/Tours/IMG_0344.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156517/btd/tours/IMG_0344-JPG.jpg",
     "days": "14 days",
     "price": "$1294.00",
     "details": {
@@ -4244,8 +4244,8 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$1294.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/14-days-package.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-04-15-at-11.25.38-AM.jpeg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156551/btd/gallery/14-days-package_365e53e7.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156552/btd/gallery/WhatsApp-Image-2022-04-15-at-11-25-38-AM_2242ccd2.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -4591,7 +4591,7 @@
     "id": "tour-017",
     "title": "14 Days South West Culture and Coast Tour Package with Hotels",
     "link": "https://driversinsrilanka.com/tour/14-days-tour-package/",
-    "image": "/images/Tours/IMG_0345.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156518/btd/tours/IMG_0345-JPG.jpg",
     "days": "14 days",
     "price": "$785.00",
     "details": {
@@ -4603,8 +4603,8 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$785.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/277578307_7426641270709774_6546903119204547482_n.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/14-days-package.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156554/btd/gallery/277578307_7426641270709774_6546903119204547482_n_116b81f3.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156551/btd/gallery/14-days-package_365e53e7.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -4949,7 +4949,7 @@
     "id": "tour-018",
     "title": "10 Days South West Culture and Coast Tour Full Package",
     "link": "https://driversinsrilanka.com/tour/10-days-tour-full-package/",
-    "image": "/images/Tours/IMG_0346.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156519/btd/tours/IMG_0346-JPG.jpg",
     "days": "10 days",
     "price": "$1095.00",
     "details": {
@@ -4961,7 +4961,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$1095.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/10-days-package-all-inclusive-package.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156555/btd/gallery/10-days-package-all-inclusive-package_7c856069.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5263,7 +5263,7 @@
     "id": "tour-019",
     "title": "10 Days South West Culture and Coast Tour Package with Hotels",
     "link": "https://driversinsrilanka.com/tour/10-days-tour-package/",
-    "image": "/images/Tours/IMG_0347.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156520/btd/tours/IMG_0347-JPG.jpg",
     "days": "10 days",
     "price": "$620.00",
     "details": {
@@ -5275,7 +5275,7 @@
       "tour_type": "Special Tour Packages",
       "price_from": "$620.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/10-days-package.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156556/btd/gallery/10-days-package_2ae12bc2.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5576,7 +5576,7 @@
     "id": "tour-020",
     "title": "5 Days Tour",
     "link": "https://driversinsrilanka.com/tour/five-days-tour/",
-    "image": "/images/Tours/IMG_0348.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156521/btd/tours/IMG_0348-JPG.jpg",
     "days": "5 days",
     "price": "$350.00",
     "details": {
@@ -5588,7 +5588,7 @@
       "tour_type": "Special Offers",
       "price_from": "$350.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/wildlife-whales.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156557/btd/gallery/wildlife-whales_94d11167.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5624,7 +5624,7 @@
     "id": "tour-021",
     "title": "Two Days Tour",
     "link": "https://driversinsrilanka.com/tour/two-days-tour/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0349.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156522/btd/tours/IMG_0349-JPG.jpg",
     "days": "2 days",
     "price": "$200.00",
     "details": {
@@ -5636,7 +5636,7 @@
       "tour_type": "Special Offers",
       "price_from": "$200.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/2-days-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156558/btd/gallery/2-days-tour_3f56f29e.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5684,8 +5684,8 @@
       "tour_type": "One Day Tours",
       "price_from": "$165.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/sigiriya.jpg",
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/wonder-of-sri-lanka.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156559/btd/gallery/sigiriya_38a1b79a.jpg",
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156560/btd/gallery/wonder-of-sri-lanka_a372acec.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5719,7 +5719,7 @@
     "id": "tour-023",
     "title": "Udawalawa Safari One Day Tour",
     "link": "https://driversinsrilanka.com/tour/udawalawa-safari-one-day-tour/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0351.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156524/btd/tours/IMG_0351-JPG.jpg",
     "days": "1 day",
     "price": "$165.00",
     "details": {
@@ -5731,7 +5731,7 @@
       "tour_type": "One Day Tours",
       "price_from": "$165.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/udawalawa-safari-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156561/btd/gallery/udawalawa-safari-tour_aa70287b.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5765,7 +5765,7 @@
     "id": "tour-024",
     "title": "Kandy One Day Tour",
     "link": "https://driversinsrilanka.com/tour/kandy-one-day-tour/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0337.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156525/btd/tours/IMG_0337-JPG.jpg",
     "days": "1 day",
     "price": "$135.00",
     "details": {
@@ -5777,7 +5777,7 @@
       "tour_type": "One Day Tours",
       "price_from": "$135.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/09/kandy-one-day-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156562/btd/gallery/kandy-one-day-tour_95c4bf9a.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5811,7 +5811,7 @@
     "id": "tour-025",
     "title": "Galle One Day Tour",
     "link": "https://driversinsrilanka.com/tour/galle-one-day-tour/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0353.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156526/btd/tours/IMG_0353-JPG.jpg",
     "days": "1 day",
     "price": "$85.00",
     "details": {
@@ -5823,7 +5823,7 @@
       "tour_type": "One Day Tours",
       "price_from": "$85.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/galle-fort.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156563/btd/gallery/galle-fort_c9f0967a.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5859,7 +5859,7 @@
     "id": "tour-026",
     "title": "Sri Lanka Cultural Tour",
     "link": "https://driversinsrilanka.com/tour/sri-lanka-cultural-tour/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0354.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156527/btd/tours/IMG_0354-JPG.jpg",
     "days": "6 days",
     "price": "$485.00",
     "details": {
@@ -5871,7 +5871,7 @@
       "tour_type": "City Tours",
       "price_from": "$485.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/culture-tour.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156564/btd/gallery/culture-tour_c916e41c.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5919,7 +5919,7 @@
     "id": "tour-027",
     "title": "Kandy Esala Perahera",
     "link": "https://driversinsrilanka.com/tour/kandy-esala-perahera/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0350.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156527/btd/tours/IMG_0350-JPG.jpg",
     "days": "10 days",
     "price": "$420.00",
     "details": {
@@ -5931,7 +5931,7 @@
       "tour_type": "Beaches",
       "price_from": "$420.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/kandy-esala-perahera.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156565/btd/gallery/kandy-esala-perahera_d4a19fa3.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -5995,7 +5995,7 @@
     "id": "tour-028",
     "title": "Romantic Escape",
     "link": "https://driversinsrilanka.com/tour/romantic-escape/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0356.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156529/btd/tours/IMG_0356-JPG.jpg",
     "days": "9 days",
     "price": "$355.00",
     "details": {
@@ -6007,7 +6007,7 @@
       "tour_type": "Beaches",
       "price_from": "$355.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/romantic-escape.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156566/btd/gallery/romantic-escape_12d10002.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6063,7 +6063,7 @@
     "id": "tour-029",
     "title": "Taste Of Sri Lanka",
     "link": "https://driversinsrilanka.com/tour/taste-of-sri-lanka/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0357.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156530/btd/tours/IMG_0357-JPG.jpg",
     "days": "6 days",
     "price": "$280.00",
     "details": {
@@ -6075,7 +6075,7 @@
       "tour_type": "Beaches",
       "price_from": "$280.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/taste-of-sri-lanka.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156567/btd/gallery/taste-of-sri-lanka_aac1e385.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6123,7 +6123,7 @@
     "id": "tour-030",
     "title": "Sri Lankan Splendours",
     "link": "https://driversinsrilanka.com/tour/sri-lankan-splendours/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxXwAPzldgbByrXuTpceGzvExAm88LugbGrxuMdlC6yGleFfE9iby5RoCBjAQAvD_BwE",
-    "image": "/images/Tours/IMG_0329.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156500/btd/tours/IMG_0329-JPG.jpg",
     "days": "9 days",
     "price": "$330.00",
     "details": {
@@ -6135,7 +6135,7 @@
       "tour_type": "Beaches",
       "price_from": "$330.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/sri-lankan-splendours.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156568/btd/gallery/sri-lankan-splendours_c07bdb1e.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6191,7 +6191,7 @@
     "id": "tour-031",
     "title": "Wonders Of Sri Lanka",
     "link": "https://driversinsrilanka.com/tour/wonders-of-sri-lanka/",
-    "image": "/images/Tours/IMG_0359.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156531/btd/tours/IMG_0359-JPG.jpg",
     "days": "8 days",
     "price": "$380.00",
     "details": {
@@ -6203,7 +6203,7 @@
       "tour_type": "Beaches",
       "price_from": "$380.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/wonder-of-sri-lanka.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156560/btd/gallery/wonder-of-sri-lanka_a372acec.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6381,7 +6381,7 @@
     "id": "tour-032",
     "title": "The Isle Of Thrills",
     "link": "https://driversinsrilanka.com/tour/the-isle-of-thrills/",
-    "image": "/images/Tours/IMG_0355.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156533/btd/tours/IMG_0355-JPG.jpg",
     "days": "8 days",
     "price": "$320.00",
     "details": {
@@ -6393,7 +6393,7 @@
       "tour_type": "City Tours",
       "price_from": "$320.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/the-isle-of-thrills.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156569/btd/gallery/the-isle-of-thrills_725269ef.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6449,7 +6449,7 @@
     "id": "tour-033",
     "title": "Sri Lanka Adventure Trekking & Hiking Tour",
     "link": "https://driversinsrilanka.com/tour/sri-lanka-adventure-trekking-hiking-tour/",
-    "image": "/images/Tours/IMG_0358.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156534/btd/tours/IMG_0358-JPG.jpg",
     "days": "10 days",
     "price": "$565.00",
     "details": {
@@ -6461,7 +6461,7 @@
       "tour_type": "Hiking",
       "price_from": "$565.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/adrenaline-rush.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156570/btd/gallery/adrenaline-rush_31549f6b.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6525,7 +6525,7 @@
     "id": "tour-034",
     "title": "Wildlife, Whales & Water",
     "link": "https://driversinsrilanka.com/tour/wildlife-whales-water/",
-    "image": "/images/Tours/IMG_0334.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156506/btd/tours/IMG_0334-JPG.jpg",
     "days": "",
     "price": "$420.00",
     "details": {
@@ -6536,7 +6536,7 @@
       "min_age": "16",
       "price_from": "$420.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/wildlife-whales.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156557/btd/gallery/wildlife-whales_94d11167.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6600,7 +6600,7 @@
     "id": "tour-035",
     "title": "Call of the Wild Sri Lanka",
     "link": "https://driversinsrilanka.com/tour/call-of-the-wild-sri-lanka/",
-    "image": "/images/Tours/IMG_0342.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156515/btd/tours/IMG_0342-JPG.jpg",
     "days": "10 days",
     "price": "$420.00",
     "details": {
@@ -6612,7 +6612,7 @@
       "tour_type": "Wild Life",
       "price_from": "$420.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/call-of-the-wild.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156571/btd/gallery/call-of-the-wild_c45a763f.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",
@@ -6810,7 +6810,7 @@
     "id": "tour-036",
     "title": "Sun Sand & Surf Sri Lanka",
     "link": "https://driversinsrilanka.com/tour/sun-sand-surf-sri-lanka/",
-    "image": "/images/Tours/IMG_0351.JPG.jpeg",
+    "image": "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156524/btd/tours/IMG_0351-JPG.jpg",
     "days": "11 days",
     "price": "$475.00",
     "details": {
@@ -6822,7 +6822,7 @@
       "tour_type": "Beaches",
       "price_from": "$475.00",
       "gallery_images": [
-        "https://driversinsrilanka.com/wp-content/uploads/2022/08/sun-surf.jpg"
+        "https://res.cloudinary.com/lxkua2cu/image/upload/v1792156573/btd/gallery/sun-surf_c692ef8f.jpg"
       ],
       "included": [
         "Air-Conditioned Private Vehicle",

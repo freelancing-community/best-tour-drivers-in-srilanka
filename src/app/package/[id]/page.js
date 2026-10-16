@@ -8,6 +8,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { showErrorAlert, showSuccessAlert, showWarningAlert } from "@/lib/alert";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import CldImage from "@/components/common/CldImage";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
@@ -58,8 +59,13 @@ const TourCard = ({ tour }) => {
       <div className="package-card">
         <div className="package-card-img-wrap">
           <Link href={`/package/${tour.id}`} className="card-img">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={tour.image} alt={tour.title} />
+            <CldImage
+              src={tour.image}
+              alt={tour.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ objectFit: "cover" }}
+            />
           </Link>
           <div className="batch">
             <span className="date">{duration}</span>
@@ -177,7 +183,7 @@ const TourDetailPage = () => {
         <Breadcrumb
           pagename="Tour Not Found"
           pagetitle="Tour Not Found"
-          bgImage="/images/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
+          bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156893/btd/site/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
         />
         <div className="container py-5 text-center">
           <h3>Tour not found.</h3>
@@ -318,7 +324,7 @@ const TourDetailPage = () => {
       <Breadcrumb
         pagename={tour.title}
         pagetitle="Tour Details"
-        bgImage="/images/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156893/btd/site/breadcrumb/tom-nicholson-PTw2xsseQxM-unsplash.jpg"
       />
 
       <div className="package-details-area pt-120 mb-120 position-relative">
@@ -331,8 +337,15 @@ const TourDetailPage = () => {
                   {/* Main large image */}
                   <div className={images.length === 1 ? "col-12" : "col-lg-6"}>
                     <div className="gallery-img-wrap" style={{ height: "100%" }}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={mainImg} alt={tour.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                      <CldImage
+                        src={mainImg}
+                        alt={tour.title}
+                        width={1200}
+                        height={800}
+                        priority
+                        sizes="(max-width: 992px) 100vw, 50vw"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      />
                       <a style={{ cursor: "pointer" }} onClick={() => openLightbox(0)}>
                         <i className="bi bi-eye" />
                       </a>
@@ -351,8 +364,14 @@ const TourDetailPage = () => {
                                 className="gallery-img-wrap"
                                 style={{ height: sideImgs.length <= 2 ? "220px" : "160px" }}
                               >
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={src} alt={`Gallery ${idx + 2}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                                <CldImage
+                                  src={src}
+                                  alt={`Gallery ${idx + 2}`}
+                                  width={600}
+                                  height={400}
+                                  sizes="(max-width: 992px) 50vw, 25vw"
+                                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                />
                                 {isLast ? (
                                   <button
                                     className="StartSlideShowFirstImage"
@@ -740,7 +759,7 @@ const TourDetailPage = () => {
 
               {/* More Inquiry card */}
               <div className="banner2-card mt-30">
-                <img src="/assets/img/innerpage/support-img.jpg" alt="Support" />
+                <img src="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156634/btd/assets/innerpage/support-img.png" alt="Support" />
                 <div className="banner2-content-wrap">
                   <div className="banner2-content">
                     <div className="hotline-area">

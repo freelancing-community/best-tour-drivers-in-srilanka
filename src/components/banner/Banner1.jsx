@@ -11,7 +11,7 @@ const Banner1 = () => {
             className="home1-banner-wrapper"
             style={{
               backgroundImage:
-                "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(/images/elephant-hero.png)",
+                "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(https://res.cloudinary.com/lxkua2cu/image/upload/v1792157328/btd/site/elephant-hero.png)",
               borderRadius: "20px",
               minHeight: "80vh",
               display: "flex",

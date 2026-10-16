@@ -159,7 +159,7 @@ const OffersPage = () => {
       <Breadcrumb
         pagename="Sri Lanka Tour Offers"
         pagetitle="Tour Offers"
-        bgImage="/images/breadcrumb/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156882/btd/site/breadcrumb/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
       />
       <noscript dangerouslySetInnerHTML={{ __html: NOSCRIPT_CSS }} />
       <div className="offers-page" ref={pageRef}>

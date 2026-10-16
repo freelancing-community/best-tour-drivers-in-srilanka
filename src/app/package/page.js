@@ -1,5 +1,6 @@
 "use client";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import CldImage from "@/components/common/CldImage";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
@@ -50,10 +51,12 @@ const TourCard = ({ tour }) => {
             href={`/package/${tour.id}`}
             className="card-img"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <CldImage
               src={tour.image}
               alt={tour.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ objectFit: "cover" }}
             />
           </Link>
           <div className="batch">
@@ -137,7 +140,7 @@ const Page = () => {
       <Breadcrumb
         pagename="Tour Packages"
         pagetitle="Tour Packages"
-        bgImage="/images/breadcrumb/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
+        bgImage="https://res.cloudinary.com/lxkua2cu/image/upload/v1792156882/btd/site/breadcrumb/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
       />
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
         <div className="container">
